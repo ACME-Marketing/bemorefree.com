@@ -28,20 +28,28 @@ try {
 ---
 
 <BaseLayout title="Be More Free - Blog">
-	<h1>Welcome to Be More Free Blog</h1>
+	<header>
+		<h1>Welcome to Be More Free Blog</h1>
+	</header>
 
-	{posts.length > 0 ? (
-		<ul>
-			{posts.map((post) => (
-				<li>
-					<a href={post.uri}>{post.title}</a>
-					{post.categories && post.categories.nodes.length > 0 && (
-						<span> ({post.categories.nodes.map(cat => cat.name).join(', ')})</span>
-					)}
-				</li>
-			))}
-		</ul>
-	) : (
-		<p>No posts found. Please add some posts in your WordPress CMS with the category "Be More Free Content".</p>
-	)}
+	<main class="container">
+		{posts.length > 0 ? (
+			<ul>
+				{posts.map((post) => (
+					<li>
+						<a href={post.uri}>{post.title}</a>
+						{post.categories && post.categories.nodes.length > 0 && (
+							<span> ({post.categories.nodes.map(cat => cat.name).join(', ')})</span>
+						)}
+					</li>
+				))}
+			</ul>
+		) : (
+			<p>No posts found. Please add some posts in your WordPress CMS with the category "Be More Free Content" or "all".</p>
+		)}
+	</main>
+
+	<footer>
+		<p>&copy; {new Date().getFullYear()} Be More Free. All rights reserved.</p>
+	</footer>
 </BaseLayout>

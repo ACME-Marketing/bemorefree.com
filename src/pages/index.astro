@@ -4,7 +4,7 @@ import { graphQLClient, gql } from '../lib/graphql';
 
 const GET_BEMOREFREE_POSTS = gql`
   query GetBemorefreePosts {
-    posts(where: { categoryNameIn: ["be-more-free", "all"] }) {
+    posts(where: { categoryNameIn: ["bemorefree", "all"] }) {
       nodes {
         title
         uri
@@ -27,9 +27,9 @@ try {
 }
 ---
 
-<BaseLayout title="Be More Free - Blog">
+<BaseLayout title="Be More Free">
 	<header>
-		<h1>Welcome to Be More Free Blog</h1>
+		<h1>Welcome to Be More Free</h1>
 	</header>
 
 	<main class="container">

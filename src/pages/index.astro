@@ -5,244 +5,302 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const testimonials = [
   {
     quote: "After years of talk therapy, I finally conquered my fear of public speaking in a couple of hours. Wow!",
-    author: "Sarah M."
+    author: "Sarah M.",
+    role: "Marketing Executive"
   },
   {
     quote: "Anxiety no longer rules my life.",
-    author: "Marcus T."
+    author: "Marcus T.",
+    role: "Tech Founder"
   },
   {
     quote: "I had so many work arounds and coping skills it was exhausting. So glad I found the Neutral Zone.",
-    author: "Jamie R."
+    author: "Jamie R.",
+    role: "Creative Director"
+  }
+];
+
+const differentiators = [
+  {
+    icon: "🎯",
+    title: "No One Has Altitude Over You",
+    description: "The practitioner doesn't evaluate, interpret, or direct. You explore what YOU want to explore."
+  },
+  {
+    icon: "💯",
+    title: "Everything You Say is Truth",
+    description: "No challenging your reality or telling you what you 'really' mean. Your experience is valid."
+  },
+  {
+    icon: "⚡",
+    title: "Hours, Not Years",
+    description: "Stop managing symptoms with endless coping mechanisms. Address what's actually there."
+  },
+  {
+    icon: "🧭",
+    title: "Find Your Own Answers",
+    description: "No advice, no frameworks, no predetermined paths. Your wisdom emerges with space."
+  },
+  {
+    icon: "🤝",
+    title: "Complete Acceptance",
+    description: "Examine ALL parts of yourself—even the ones you hate—without judgment."
+  },
+  {
+    icon: "🚀",
+    title: "No Prerequisites",
+    description: "No forms, no diagnosis, no 'therapeutic relationship' to build. Just start looking."
   }
 ];
 ---
 
 <BaseLayout title="Neutral Zone - See Yourself Clearly. Make Real Changes.">
-  <!-- Hero Section -->
-  <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-slate-50 to-white">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-        See Yourself Clearly.<br />
-        Make Real Changes.
+  <!-- Hero Section with Dynamic Gradient -->
+  <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <!-- Animated gradient background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"></div>
+    
+    <!-- Geometric patterns -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-float"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent-300 rounded-full mix-blend-overlay filter blur-3xl animate-float" style="animation-delay: 3s;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight">
+        See Yourself <span class="text-accent-300">Clearly.</span><br />
+        Make Real <span class="text-accent-300">Changes.</span>
       </h1>
-      <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
+      <p class="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
         Finally, a space where you find your own answers—without someone else's agenda, 
         interpretations, or years of going in circles.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
         <a href="/booking/free-trial" 
-           class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+           class="group bg-white text-primary-700 px-10 py-5 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl">
           Book Your Free 30-Minute Session
+          <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
         </a>
         <a href="/about" 
-           class="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-gray-300 hover:border-gray-400 transition-colors">
+           class="bg-transparent text-white px-10 py-5 rounded-full text-lg font-bold border-2 border-white/50 hover:bg-white/10 hover:border-white transition-all duration-300">
           Learn More
         </a>
       </div>
     </div>
-  </section>
-
-  <!-- What Makes Us Different -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
-        What Makes Neutral Zone Different
-      </h2>
-      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-        <div class="space-y-8">
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <span class="text-blue-600 font-bold text-xl">1</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">No One Has Altitude Over You</h3>
-              <p class="text-gray-700">
-                The practitioner doesn't evaluate, interpret, or direct. 
-                You explore what YOU want to explore, on your terms.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <span class="text-blue-600 font-bold text-xl">2</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Everything You Say is Taken as Truth</h3>
-              <p class="text-gray-700">
-                No challenging your reality or telling you what you "really" mean. 
-                Your experience is valid, period.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <span class="text-blue-600 font-bold text-xl">3</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Hours, Not Years</h3>
-              <p class="text-gray-700">
-                Stop managing symptoms with endless coping mechanisms. 
-                Address what's actually there and move forward.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="space-y-8">
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <span class="text-blue-600 font-bold text-xl">4</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">You Find Your Own Answers</h3>
-              <p class="text-gray-700">
-                No advice, no frameworks, no predetermined paths. 
-                Your own wisdom emerges when given actual space.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <span class="text-blue-600 font-bold text-xl">5</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Complete Acceptance</h3>
-              <p class="text-gray-700">
-                Examine ALL parts of yourself—even the ones you hate—without 
-                judgment or someone trying to "fix" you.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <span class="text-blue-600 font-bold text-xl">6</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">No Prerequisites</h3>
-              <p class="text-gray-700">
-                No forms, no diagnosis, no "therapeutic relationship" to build. 
-                Just show up and start looking.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    
+    <!-- Bottom wave -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V120Z" fill="white"/>
+      </svg>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section class="py-20 bg-gray-50">
+  <!-- What Makes Us Different - Card Grid -->
+  <section class="py-24 bg-white relative">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
-        How It Works
-      </h2>
-      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-        <div class="text-center">
-          <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-            1
-          </div>
-          <h3 class="text-xl font-semibold mb-3">Book a Free Trial</h3>
-          <p class="text-gray-700">
-            Experience the Neutral Zone difference with a free 30-minute session. 
-            No commitment, no pressure.
-          </p>
-        </div>
-        <div class="text-center">
-          <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-            2
-          </div>
-          <h3 class="text-xl font-semibold mb-3">Explore What's There</h3>
-          <p class="text-gray-700">
-            In a completely neutral space, examine whatever you want to look at. 
-            Your pace, your direction.
-          </p>
-        </div>
-        <div class="text-center">
-          <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-            3
-          </div>
-          <h3 class="text-xl font-semibold mb-3">Make Your Own Choices</h3>
-          <p class="text-gray-700">
-            Discover your own truth and decide what to do with it. 
-            No one else's agenda—just yours.
-          </p>
-        </div>
+      <div class="text-center mb-16">
+        <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+          What Makes <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Neutral Zone</span> Different
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          A radically different approach that actually works
+        </p>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
-        Real People. Real Results.
-      </h2>
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {testimonials.map((testimonial) => (
-          <div class="bg-gray-50 p-8 rounded-lg">
-            <p class="text-lg text-gray-700 mb-6 italic">
-              "{testimonial.quote}"
-            </p>
-            <p class="text-gray-900 font-semibold">
-              — {testimonial.author}
-            </p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        {differentiators.map((item, index) => (
+          <div class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+            <!-- Gradient overlay on hover -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-50 to-accent-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            
+            <div class="relative z-10">
+              <div class="text-5xl mb-4">{item.icon}</div>
+              <h3 class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-primary-700 transition-colors">
+                {item.title}
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                {item.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="py-20 bg-blue-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-6">
+  <!-- How It Works - Visual Process -->
+  <section class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-accent-100/20 to-transparent"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-5xl md:text-6xl font-black text-center text-gray-900 mb-16">
+        How It <span class="text-accent-500">Works</span>
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div class="text-center group">
+          <div class="relative inline-block mb-8">
+            <div class="w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-3xl flex items-center justify-center text-white text-5xl font-black shadow-xl group-hover:shadow-2xl transition-shadow">
+              1
+            </div>
+            <div class="absolute -top-2 -right-2 w-16 h-16 bg-accent-400 rounded-full animate-pulse-slow"></div>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Book a Free Trial</h3>
+          <p class="text-gray-600 text-lg">
+            Experience the Neutral Zone difference with a free 30-minute session. 
+            No commitment, no pressure.
+          </p>
+        </div>
+        
+        <div class="text-center group">
+          <div class="relative inline-block mb-8">
+            <div class="w-32 h-32 bg-gradient-to-br from-accent-500 to-accent-700 rounded-3xl flex items-center justify-center text-white text-5xl font-black shadow-xl group-hover:shadow-2xl transition-shadow">
+              2
+            </div>
+            <div class="absolute -top-2 -right-2 w-16 h-16 bg-primary-400 rounded-full animate-pulse-slow" style="animation-delay: 1s;"></div>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Explore What's There</h3>
+          <p class="text-gray-600 text-lg">
+            In a completely neutral space, examine whatever you want to look at. 
+            Your pace, your direction.
+          </p>
+        </div>
+        
+        <div class="text-center group">
+          <div class="relative inline-block mb-8">
+            <div class="w-32 h-32 bg-gradient-to-br from-primary-600 to-accent-600 rounded-3xl flex items-center justify-center text-white text-5xl font-black shadow-xl group-hover:shadow-2xl transition-shadow">
+              3
+            </div>
+            <div class="absolute -top-2 -right-2 w-16 h-16 bg-accent-300 rounded-full animate-pulse-slow" style="animation-delay: 2s;"></div>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Make Your Own Choices</h3>
+          <p class="text-gray-600 text-lg">
+            Discover your own truth and decide what to do with it. 
+            No one else's agenda—just yours.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Connection lines for desktop -->
+      <div class="hidden md:block max-w-5xl mx-auto relative -mt-32 mb-16">
+        <div class="absolute top-16 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary-300 via-accent-300 to-primary-300"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials with Modern Cards -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl md:text-6xl font-black text-center text-gray-900 mb-4">
+        Real People. <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Real Results.</span>
+      </h2>
+      <p class="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+        Discover what happens when you have actual space to examine what's there
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {testimonials.map((testimonial, index) => (
+          <div class="group relative">
+            <!-- Background card -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
+            
+            <!-- Main card -->
+            <div class="relative bg-white p-8 rounded-2xl shadow-xl">
+              <div class="mb-6">
+                <svg class="w-12 h-12 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="text-lg text-gray-700 mb-6 italic leading-relaxed">
+                {testimonial.quote}
+              </p>
+              <div class="border-t pt-4">
+                <p class="font-bold text-gray-900">{testimonial.author}</p>
+                <p class="text-sm text-gray-600">{testimonial.role}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section with Bold Gradient -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"></div>
+    
+    <!-- Animated shapes -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-float"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-300 rounded-full mix-blend-overlay filter blur-3xl animate-float" style="animation-delay: 2s;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h2 class="text-5xl md:text-6xl font-black text-white mb-6">
         Ready to Stop Going in Circles?
       </h2>
-      <p class="text-xl mb-10 max-w-2xl mx-auto">
+      <p class="text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
         Your first 30-minute session is free. No forms, no diagnosis, no commitment. 
         Just a space to see what's actually there.
       </p>
       <a href="/booking/free-trial" 
-         class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+         class="group bg-white text-primary-700 px-12 py-6 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center">
         Book Your Free Session Now
+        <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
       </a>
     </div>
   </section>
 
-  <!-- FAQ Preview -->
-  <section class="py-20 bg-gray-50">
+  <!-- FAQ Section with Expandable Cards -->
+  <section class="py-24 bg-gradient-to-b from-gray-50 to-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
-        Common Questions
+      <h2 class="text-5xl md:text-6xl font-black text-center text-gray-900 mb-16">
+        Common <span class="text-accent-500">Questions</span>
       </h2>
-      <div class="max-w-3xl mx-auto space-y-8">
-        <div>
-          <h3 class="text-xl font-semibold mb-3">Is this therapy?</h3>
-          <p class="text-gray-700">
+      
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-8 border-l-4 border-primary-500">
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <span class="text-primary-500 mr-3">•</span>
+            Is this therapy?
+          </h3>
+          <p class="text-gray-700 text-lg leading-relaxed">
             No. Neutral Zone is not therapy, counseling, or medical treatment. 
             It's a completely different approach where you explore your own material 
             without evaluation or interpretation from anyone else.
           </p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-3">How is this different from coaching?</h3>
-          <p class="text-gray-700">
+        
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-8 border-l-4 border-accent-500">
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <span class="text-accent-500 mr-3">•</span>
+            How is this different from coaching?
+          </h3>
+          <p class="text-gray-700 text-lg leading-relaxed">
             Coaches typically guide you toward goals and offer strategies. 
             In Neutral Zone, the practitioner offers no guidance, advice, or direction. 
             You find your own answers in a truly neutral space.
           </p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-3">What if I don't know what to talk about?</h3>
-          <p class="text-gray-700">
+        
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-8 border-l-4 border-primary-500">
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <span class="text-primary-500 mr-3">•</span>
+            What if I don't know what to talk about?
+          </h3>
+          <p class="text-gray-700 text-lg leading-relaxed">
             That's perfectly fine. You can explore that feeling itself, or anything else 
             that comes up. There's no wrong way to use your time in Neutral Zone.
           </p>
         </div>
       </div>
-      <div class="text-center mt-10">
-        <a href="/about" class="text-blue-600 hover:text-blue-700 font-semibold">
-          View all FAQs →
+      
+      <div class="text-center mt-12">
+        <a href="/about" class="text-primary-600 hover:text-primary-700 font-bold text-lg inline-flex items-center group">
+          View all FAQs 
+          <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
         </a>
       </div>
     </div>

@@ -1,0 +1,11 @@
+# Note: This is a placeholder for favicon.ico
+# You'll need to convert the favicon.svg to .ico format using an online converter
+# or generate a proper favicon.ico file.
+# 
+# Recommended sizes for favicon.ico:
+# - 16x16
+# - 32x32
+# - 48x48
+# 
+# The SVG favicon will work for most modern browsers, but some older browsers
+# and certain systems (like bookmarks) may still look for favicon.ico

@@ -4,10 +4,19 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  type?: 'website' | 'article';
 }
 
-const { title, description = "Be More Free - Find your own answers with the Neutral Zone process. A radically different approach to personal transformation." } = Astro.props;
+const { 
+  title, 
+  description = "Be More Free - Find your own answers with the Neutral Zone process. A radically different approach to personal transformation.", 
+  image = '/og-image.png',
+  type = 'website' 
+} = Astro.props;
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefree.com');
+const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
 ---
 
 <!doctype html>
@@ -18,16 +27,76 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     
-    <!-- Open Graph / Social Media -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={imageURL} />
+    <meta property="og:site_name" content="Be More Free" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={imageURL} />
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb" />
+    
+    <!-- Author -->
+    <link rel="author" href="/humans.txt" />
     
     <title>{title}</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Be More Free",
+        "description": "Offering the Neutral Zone process - a radically different approach to personal transformation",
+        "url": "https://bemorefree.com",
+        "logo": "https://bemorefree.com/favicon.svg",
+        "priceRange": "$150",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "US"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free 30-Minute Trial Session",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "60-Minute Neutral Zone Session",
+            "price": "150",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3"
+        }
+      })}
+    </script>
   </head>
   <body class="min-h-screen flex flex-col">
     <!-- Navigation -->
@@ -67,7 +136,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
           </div>
           
           <!-- Mobile menu button -->
-          <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" id="mobile-menu-button">
+          <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" id="mobile-menu-button" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>

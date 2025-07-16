@@ -9,8 +9,8 @@
 - [ ] Configure Netlify deployment from GitHub
 - [ ] Set up staging environment on Netlify
 - [✓] Create basic folder structure per PLANNING.md
-- [ ] Add favicons and meta images
-- [ ] Configure Astro config for sitemap and image optimization
+- [✓] Add favicons and meta images
+- [✓] Configure Astro config for sitemap and image optimization
 
 ## Milestone 2: Core Layout & Components
 - [✓] Create Layout.astro with header/footer
@@ -109,12 +109,12 @@
 - [ ] Have legal review of all compliance content
 
 ## Milestone 10: SEO & Performance Optimization
-- [ ] Install and configure @astrojs/sitemap
-- [ ] Add robots.txt with sitemap reference
-- [ ] Implement structured data for local business
+- [✓] Install and configure @astrojs/sitemap
+- [✓] Add robots.txt with sitemap reference
+- [✓] Implement structured data for local business
 - [ ] Optimize all images with proper sizing
 - [ ] Add alt text to all images
-- [ ] Create custom 404 page with helpful links
+- [✓] Create custom 404 page with helpful links
 - [ ] Set up 301 redirects if needed
 - [ ] Minimize CSS/JS bundle sizes
 - [ ] Configure caching headers
@@ -207,6 +207,14 @@
 - [✓] Create proper About page for Be More Free company
 - [✓] Move process description to /neutral-zone page
 - [✓] Update all branding references throughout site
+- [✓] Add sitemap integration and configuration
+- [✓] Create robots.txt with proper crawler instructions
+- [✓] Add favicon and manifest.json for PWA support
+- [✓] Implement structured data for LocalBusiness schema
+- [✓] Add comprehensive meta tags and Open Graph support
+- [✓] Create humans.txt for transparency
+- [✓] Create blog listing page with modern design
+- [✓] Create practitioner profile page
 
 ## Task Status Key
 - [ ] Not started

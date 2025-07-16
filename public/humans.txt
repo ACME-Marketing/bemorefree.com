@@ -1,0 +1,17 @@
+/* TEAM */
+Founder & Practitioner: [Name]
+Site: https://bemorefree.com
+Location: [Location]
+
+/* THANKS */
+Neutral Zone Process Development: Be More Free Team
+
+/* SITE */
+Last update: 2025/01/16
+Language: English
+Doctype: HTML5
+IDE: VS Code
+Framework: Astro
+CSS: Tailwind CSS
+CMS: WordPress (Headless)
+Hosting: Netlify

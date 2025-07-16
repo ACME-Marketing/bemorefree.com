@@ -1,0 +1,16 @@
+{
+  "name": "Be More Free - Alternative to Traditional Therapy",
+  "short_name": "Be More Free",
+  "description": "Find your own answers with the Neutral Zone process - a radically different approach to personal transformation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

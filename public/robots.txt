@@ -1,0 +1,30 @@
+# Robots.txt for Be More Free (https://bemorefree.com)
+# Allow all web crawlers access to all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bemorefree.com/sitemap-index.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Disallow access to internal paths
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /admin/
+
+# Specific crawler instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

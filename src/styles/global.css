@@ -1,4 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+  
+  /* Ensure consistent focus styles */
+  :focus {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+  
+  /* Remove focus styles for mouse users */
+  :focus:not(:focus-visible) {
+    @apply ring-0 ring-offset-0;
+  }
+  
+  /* Typography defaults */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-gray-900;
+  }
+  
+  /* Prose styles for blog content */
+  .prose {
+    @apply text-gray-700 leading-relaxed;
+  }
+  
+  .prose h1 {
+    @apply text-4xl mb-8 mt-0;
+  }
+  
+  .prose h2 {
+    @apply text-3xl mb-6 mt-12;
+  }
+  
+  .prose h3 {
+    @apply text-2xl mb-4 mt-8;
+  }
+  
+  .prose p {
+    @apply mb-6;
+  }
+  
+  .prose ul, .prose ol {
+    @apply mb-6 ml-6;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic my-6;
+  }
+  
+  .prose a {
+    @apply text-primary-600 hover:text-primary-700 underline;
+  }
+}

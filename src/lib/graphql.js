@@ -1,11 +1,11 @@
 import { GraphQLClient, gql } from 'graphql-request';
 
-const endpoint = 'https://cms.acmemarketing.us/graphql';
+// Use environment variable with fallback
+const endpoint = import.meta.env.WORDPRESS_GRAPHQL_ENDPOINT || 'https://cms.acmemarketing.us/graphql';
 
 export const graphQLClient = new GraphQLClient(endpoint, {
   headers: {
-    // You can add authentication headers here if your GraphQL endpoint requires them
-    // For now, we'll assume it's public or handled by other means
+    // Add any authentication headers if needed
   },
 });
 

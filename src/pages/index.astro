@@ -1,94 +1,250 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { graphQLClient, gql } from '../lib/graphql';
 
-const GET_POSTS = gql`
-  query GetPosts {
-    posts(where: { tagSlugIn: ["bemorefree", "all"] }) {
-      nodes {
-        title
-        uri
-        content
-        featuredImage {
-          node {
-            sourceUrl
-            altText
-            mediaDetails {
-              width
-              height
-            }
-          }
-        }
-        tags {
-          nodes {
-            name
-            slug
-          }
-        }
-      }
-    }
+// For now, we'll use placeholder content until blog integration is ready
+const testimonials = [
+  {
+    quote: "After years of talk therapy, I finally conquered my fear of public speaking in a couple of hours. Wow!",
+    author: "Sarah M."
+  },
+  {
+    quote: "Anxiety no longer rules my life.",
+    author: "Marcus T."
+  },
+  {
+    quote: "I had so many work arounds and coping skills it was exhausting. So glad I found the Neutral Zone.",
+    author: "Jamie R."
   }
-`;
-
-let posts = [];
-try {
-  const data = await graphQLClient.request(GET_POSTS);
-  posts = data.posts.nodes;
-} catch (error) {
-  console.error("Error fetching posts:", error);
-}
+];
 ---
 
-<BaseLayout title="Be More Free">
-	<header class="bg-blue-800 text-white py-4 shadow-md">
-		<div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-			<h1 class="text-3xl font-extrabold mb-2 md:mb-0"><a href="/" class="hover:text-red-400">Be More Free</a></h1>
-			<nav>
-				<ul class="flex space-x-4">
-					<li><a href="#" class="hover:text-red-400">Home</a></li>
-					<li><a href="#" class="hover:text-red-400">Services</a></li>
-					<li><a href="#" class="hover:text-red-400">Blog</a></li>
-					<li><a href="#" class="hover:text-red-400">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+<BaseLayout title="Neutral Zone - See Yourself Clearly. Make Real Changes.">
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-slate-50 to-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+        See Yourself Clearly.<br />
+        Make Real Changes.
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
+        Finally, a space where you find your own answers—without someone else's agenda, 
+        interpretations, or years of going in circles.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/booking/free-trial" 
+           class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+          Book Your Free 30-Minute Session
+        </a>
+        <a href="/about" 
+           class="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-gray-300 hover:border-gray-400 transition-colors">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
 
-	<section class="relative bg-red-600 text-white py-20 text-center overflow-hidden">
-		<div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/hero-background.svg');"></div>
-		<div class="container mx-auto relative z-10 px-4">
-			<h2 class="text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">Be More Free</h2>
-			<p class="text-2xl mb-10 font-light">Unlock Your Potential, Live Your Best Life</p>
-			<a href="#" class="bg-white text-blue-800 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300">Get a Free Consultation</a>
-		</div>
-	</section>
+  <!-- What Makes Us Different -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+        What Makes Neutral Zone Different
+      </h2>
+      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span class="text-blue-600 font-bold text-xl">1</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">No One Has Altitude Over You</h3>
+              <p class="text-gray-700">
+                The practitioner doesn't evaluate, interpret, or direct. 
+                You explore what YOU want to explore, on your terms.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span class="text-blue-600 font-bold text-xl">2</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Everything You Say is Taken as Truth</h3>
+              <p class="text-gray-700">
+                No challenging your reality or telling you what you "really" mean. 
+                Your experience is valid, period.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span class="text-blue-600 font-bold text-xl">3</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Hours, Not Years</h3>
+              <p class="text-gray-700">
+                Stop managing symptoms with endless coping mechanisms. 
+                Address what's actually there and move forward.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span class="text-blue-600 font-bold text-xl">4</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">You Find Your Own Answers</h3>
+              <p class="text-gray-700">
+                No advice, no frameworks, no predetermined paths. 
+                Your own wisdom emerges when given actual space.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span class="text-blue-600 font-bold text-xl">5</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Complete Acceptance</h3>
+              <p class="text-gray-700">
+                Examine ALL parts of yourself—even the ones you hate—without 
+                judgment or someone trying to "fix" you.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span class="text-blue-600 font-bold text-xl">6</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">No Prerequisites</h3>
+              <p class="text-gray-700">
+                No forms, no diagnosis, no "therapeutic relationship" to build. 
+                Just show up and start looking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<main class="container mx-auto px-4 py-8">
-		<h2 class="text-3xl font-bold text-center mb-8">Latest Insights</h2>
-		{posts.length > 0 ? (
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{posts.map((post) => (
-					<div class="bg-white rounded-lg shadow-lg overflow-hidden">
-						{post.featuredImage && post.featuredImage.node && (
-							<img src={post.featuredImage.node.sourceUrl} alt={post.featuredImage.node.altText || post.title} width={post.featuredImage.node.mediaDetails.width} height={post.featuredImage.node.mediaDetails.height} class="w-full h-48 object-cover" />
-						)}
-						<div class="p-6">
-							<h3 class="text-xl font-semibold mb-2"><a href={`/posts/${post.uri}`}>{post.title}</a></h3>
-							{post.tags && post.tags.nodes.length > 0 && (
-								<p class="text-gray-600 text-sm mb-4">Tags: {post.tags.nodes.map(tag => tag.name).join(', ')}</p>
-							)}
-							<div class="text-gray-700 mb-4" set:html={post.content.substring(0, 150) + '...'} />
-							<a href={`/posts/${post.uri}`} class="text-blue-600 hover:underline">Read More</a>
-						</div>
-					</div>
-				))}
-			</div>
-		) : (
-			<p class="text-center text-gray-600 text-xl py-10">No posts found. Please add some posts in your WordPress CMS with the tag "bemorefree" or "all".</p>
-		)}
-	</main>
+  <!-- How It Works -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+        How It Works
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Book a Free Trial</h3>
+          <p class="text-gray-700">
+            Experience the Neutral Zone difference with a free 30-minute session. 
+            No commitment, no pressure.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Explore What's There</h3>
+          <p class="text-gray-700">
+            In a completely neutral space, examine whatever you want to look at. 
+            Your pace, your direction.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Make Your Own Choices</h3>
+          <p class="text-gray-700">
+            Discover your own truth and decide what to do with it. 
+            No one else's agenda—just yours.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<footer>
-		<p>&copy; {new Date().getFullYear()} ACME Marketing. All rights reserved.</p>
-	</footer>
+  <!-- Testimonials -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+        Real People. Real Results.
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {testimonials.map((testimonial) => (
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <p class="text-lg text-gray-700 mb-6 italic">
+              "{testimonial.quote}"
+            </p>
+            <p class="text-gray-900 font-semibold">
+              — {testimonial.author}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">
+        Ready to Stop Going in Circles?
+      </h2>
+      <p class="text-xl mb-10 max-w-2xl mx-auto">
+        Your first 30-minute session is free. No forms, no diagnosis, no commitment. 
+        Just a space to see what's actually there.
+      </p>
+      <a href="/booking/free-trial" 
+         class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+        Book Your Free Session Now
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Preview -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+        Common Questions
+      </h2>
+      <div class="max-w-3xl mx-auto space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Is this therapy?</h3>
+          <p class="text-gray-700">
+            No. Neutral Zone is not therapy, counseling, or medical treatment. 
+            It's a completely different approach where you explore your own material 
+            without evaluation or interpretation from anyone else.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3">How is this different from coaching?</h3>
+          <p class="text-gray-700">
+            Coaches typically guide you toward goals and offer strategies. 
+            In Neutral Zone, the practitioner offers no guidance, advice, or direction. 
+            You find your own answers in a truly neutral space.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3">What if I don't know what to talk about?</h3>
+          <p class="text-gray-700">
+            That's perfectly fine. You can explore that feeling itself, or anything else 
+            that comes up. There's no wrong way to use your time in Neutral Zone.
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="/about" class="text-blue-600 hover:text-blue-700 font-semibold">
+          View all FAQs →
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

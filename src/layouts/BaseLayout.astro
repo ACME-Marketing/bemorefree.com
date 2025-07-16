@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "A radically different approach to personal transformation. Find your own answers in a completely neutral, judgment-free space." } = Astro.props;
+const { title, description = "Be More Free - Find your own answers with the Neutral Zone process. A radically different approach to personal transformation." } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefree.com');
 ---
 
@@ -36,16 +36,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
         <div class="flex justify-between items-center h-20">
           <a href="/" class="flex items-center space-x-2 group">
             <div class="w-10 h-10 bg-gradient-to-br from-primary-600 to-accent-500 rounded-xl flex items-center justify-center text-white font-black text-xl group-hover:shadow-lg transition-all duration-300">
-              NZ
+              BF
             </div>
             <span class="text-2xl font-bold text-gray-900">
-              Neutral Zone
+              Be More Free
             </span>
           </a>
           
           <div class="hidden md:flex items-center space-x-8">
             <a href="/about" class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group">
               About
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="/neutral-zone" class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group">
+              The Process
               <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"></span>
             </a>
             <a href="/practitioner" class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group">
@@ -76,6 +80,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
             <a href="/about" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
               About
             </a>
+            <a href="/neutral-zone" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
+              The Process
+            </a>
             <a href="/practitioner" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
               Practitioner
             </a>
@@ -104,15 +111,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
           <div>
             <div class="flex items-center space-x-2 mb-4">
               <div class="w-10 h-10 bg-gradient-to-br from-primary-400 to-accent-400 rounded-xl flex items-center justify-center text-white font-black text-xl">
-                NZ
+                BF
               </div>
               <span class="text-2xl font-bold text-white">
-                Neutral Zone
+                Be More Free
               </span>
             </div>
             <p class="text-sm text-gray-400">
-              A radically different approach where you find your own answers 
-              in a completely neutral space.
+              Find your own answers using the Neutral Zone process—a radically 
+              different approach to personal transformation.
             </p>
           </div>
           
@@ -122,19 +129,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
             <ul class="space-y-3 text-sm">
               <li><a href="/about" class="hover:text-white transition-colors flex items-center group">
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
-                About Neutral Zone
+                About Be More Free
+              </a></li>
+              <li><a href="/neutral-zone" class="hover:text-white transition-colors flex items-center group">
+                <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
+                The Neutral Zone Process
               </a></li>
               <li><a href="/practitioner" class="hover:text-white transition-colors flex items-center group">
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
-                Practitioner
+                Our Practitioner
               </a></li>
               <li><a href="/blog" class="hover:text-white transition-colors flex items-center group">
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
                 Blog
-              </a></li>
-              <li><a href="/resources" class="hover:text-white transition-colors flex items-center group">
-                <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
-                Resources
               </a></li>
             </ul>
           </div>
@@ -151,7 +158,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
                 Book Full Session
               </a></li>
-              <li><a href="/about#what-to-expect" class="hover:text-white transition-colors flex items-center group">
+              <li><a href="/neutral-zone#what-to-expect" class="hover:text-white transition-colors flex items-center group">
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
                 What to Expect
               </a></li>
@@ -183,13 +190,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bemorefr
             <p class="text-center text-sm font-medium text-gray-300">
               <span class="text-accent-400">⚡</span> 
               <strong>Not therapy or medical treatment.</strong> 
-              Neutral Zone is a non-directive exploration process.
+              The Neutral Zone process is a non-directive exploration method.
               <span class="text-accent-400">⚡</span>
             </p>
           </div>
           
           <p class="text-sm text-center text-gray-500">
-            &copy; {new Date().getFullYear()} Neutral Zone. All rights reserved.
+            &copy; {new Date().getFullYear()} Be More Free. All rights reserved.
           </p>
         </div>
       </div>

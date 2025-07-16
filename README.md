@@ -1,12 +1,12 @@
-# Neutral Zone Website (bemorefree.com)
+# Be More Free Website (bemorefree.com)
 
-A high-performance, SEO-optimized website for Neutral Zone - a radically different approach to personal transformation where clients find their own answers in a completely neutral, judgment-free space.
+A high-performance, SEO-optimized website for Be More Free - offering the Neutral Zone process as a radically different approach to personal transformation where clients find their own answers in a completely neutral, judgment-free space.
 
 ## 🚀 Project Overview
 
-This website serves as the primary digital presence for Neutral Zone, focusing on:
+This website serves as the primary digital presence for Be More Free, focusing on:
 - Converting visitors frustrated with traditional therapy into booked sessions
-- Explaining the non-directive, non-evaluative approach
+- Explaining the Neutral Zone process - our non-directive, non-evaluative approach
 - Providing valuable content through blog integration
 - Enabling easy booking for free trials and paid sessions
 
@@ -97,14 +97,21 @@ The site automatically deploys to Netlify on push to the `main` branch.
 - **SEO Optimized:** Built for search visibility with performance in mind
 - **Legal Compliance:** Clear disclaimers that this is not therapy or medical treatment
 
+## 💡 Brand Architecture
+
+- **Be More Free** - The company/brand name (matching the domain)
+- **Neutral Zone** - The process/methodology offered by Be More Free
+
+This distinction is important for SEO and brand clarity.
+
 ## ⚖️ Legal Notice
 
-This website represents Neutral Zone, which is NOT:
+Be More Free and the Neutral Zone process are NOT:
 - Therapy or counseling
 - Medical or psychiatric treatment
 - A healthcare service
 
-It is a non-directive exploration process where clients find their own answers.
+The Neutral Zone is a non-directive exploration process where clients find their own answers.
 
 ## 🤝 Contributing
 
@@ -116,4 +123,4 @@ It is a non-directive exploration process where clients find their own answers.
 
 ---
 
-*Built with Astro, Tailwind CSS, and a commitment to genuine neutrality.*
+*Built with Astro, Tailwind CSS, and a commitment to helping people be more free.*

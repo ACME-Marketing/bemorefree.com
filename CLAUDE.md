@@ -7,7 +7,12 @@
 4. **Add newly discovered tasks immediately**
 
 ## Project Overview
-You are helping build a website for Neutral Zone, a revolutionary alternative to traditional therapy. The website is bemorefree.com and the primary goal is converting visitors into booked sessions.
+You are helping build a website for Be More Free, which offers the Neutral Zone process as a revolutionary alternative to traditional therapy. The website is bemorefree.com and the primary goal is converting visitors into booked sessions.
+
+## CRITICAL BRANDING
+- **Be More Free** = The company/brand name (matches the domain)
+- **Neutral Zone** = The process/methodology offered by Be More Free
+- Always maintain this distinction for SEO and brand clarity
 
 ## Core Philosophy - THIS IS CRITICAL
 Neutral Zone is NOT therapy. It's a completely non-directive, non-evaluative, and non-judgmental space where:

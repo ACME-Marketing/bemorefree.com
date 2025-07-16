@@ -1,7 +1,7 @@
-# Product Requirements Document - Neutral Zone Website
+# Product Requirements Document - Be More Free Website
 
 ## Product Vision
-To create a digital gateway to true self-discovery by offering a radically different approach to personal transformation - one where clients find their own answers in a completely neutral, judgment-free space, free from the limitations and low success rates of traditional therapy.
+To create a digital gateway to true self-discovery by offering the Neutral Zone process—a radically different approach to personal transformation where clients find their own answers in a completely neutral, judgment-free space, free from the limitations and low success rates of traditional therapy.
 
 ## Value Proposition
 

@@ -88,7 +88,7 @@ const nextPost = currentPostIndex < allPosts.length - 1 ? allPosts[currentPostIn
 const sidebarPosts = allPosts.filter(p => p.uri !== uri).slice(0, 5); // Get 5 other posts for sidebar
 ---
 
-<BaseLayout title={post.title}>
+<BaseLayout title={`${post.title} - Be More Free Blog`}>
   <div class="container mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
     <!-- Main Content Area -->
     <main class="lg:w-3/4">

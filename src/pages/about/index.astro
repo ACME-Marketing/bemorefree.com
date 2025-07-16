@@ -2,198 +2,162 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About Neutral Zone - A Different Approach">
+<BaseLayout title="About Be More Free - Alternative to Traditional Therapy">
   <!-- Hero Section -->
   <section class="relative py-24 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
     
-    <!-- Decorative elements -->
-    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-accent-200/20 to-transparent rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-primary-200/20 to-transparent rounded-full blur-3xl"></div>
-    
-    <div class="container mx-auto px-4 relative z-10">
-      <h1 class="text-6xl md:text-7xl font-black text-center text-gray-900 mb-8">
-        What is <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Neutral Zone?</span>
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <h1 class="text-6xl md:text-7xl font-black text-gray-900 mb-8">
+        About <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Be More Free</span>
       </h1>
-      <p class="text-2xl text-center text-gray-700 max-w-4xl mx-auto leading-relaxed">
-        A radically different approach where you examine your own material 
-        in a completely neutral space—without evaluation, interpretation, 
-        or someone else's agenda.
+      <p class="text-2xl text-gray-700 max-w-3xl mx-auto">
+        We believe everyone deserves to find their own answers without someone else's 
+        agenda getting in the way.
       </p>
     </div>
   </section>
 
-  <!-- Main Content -->
+  <!-- Mission Section -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-4 max-w-5xl">
-      <!-- Intro Section -->
-      <div class="mb-20">
-        <h2 class="text-4xl md:text-5xl font-black mb-8 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-700">
-          Not Therapy. Not Coaching.<br />
-          Something Else Entirely.
-        </h2>
-        
-        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-          For decades, people have been told that healing takes years, that they need 
-          expert guidance, and that someone else knows better than they do about their 
-          own experience. The Neutral Zone takes a completely different approach.
-        </p>
-      </div>
-
-      <!-- The Problem - Visual Cards -->
-      <div class="mb-20">
-        <h3 class="text-3xl font-bold mb-8 flex items-center">
-          <span class="text-accent-500 mr-4">⚠️</span>
-          The Problem with Traditional Approaches
-        </h3>
-        
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-          {[
-            "Someone else sets the agenda and decides what's important",
-            "Your experience gets interpreted through their frameworks",
-            "You're taught to manage symptoms instead of examining what's actually there",
-            "Progress is measured by their standards, not yours",
-            "Years go by with minimal real change"
-          ].map((problem) => (
-            <div class="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 flex items-start space-x-4">
-              <span class="text-red-500 text-2xl flex-shrink-0">✗</span>
-              <p class="text-gray-700">{problem}</p>
-            </div>
-          ))}
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Our Mission</h2>
+          <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+            Be More Free exists to provide a genuine alternative to traditional therapy 
+            and coaching. We've seen too many people spend years in therapy with minimal 
+            results, exhausted from managing coping mechanisms that don't actually help.
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed">
+            That's why we developed the Neutral Zone process—a radically different approach 
+            that helps people see themselves clearly and make real changes, often in hours 
+            instead of years.
+          </p>
+        </div>
+        <div class="bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Why "Be More Free"?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Because that's what actually happens when you have space to examine your own 
+            material without interference. You become more free from old patterns, more 
+            free from others' expectations, more free to make your own choices.
+          </p>
         </div>
       </div>
 
-      <!-- The Neutral Zone Difference -->
+      <!-- Values Section -->
       <div class="mb-20">
-        <h3 class="text-3xl font-bold mb-8 flex items-center">
-          <span class="text-primary-500 mr-4">✨</span>
-          The Neutral Zone Difference
-        </h3>
+        <h2 class="text-4xl font-bold text-center mb-12">What We Stand For</h2>
         
-        <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 md:p-12 mb-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+              1
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Your Wisdom Matters</h3>
+            <p class="text-gray-600">
+              You already have the answers within you. You just need the right space 
+              to find them—without someone else's interpretations getting in the way.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-accent-500 to-accent-700 rounded-2xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+              2
+            </div>
+            <h3 class="text-2xl font-bold mb-4">No One Above You</h3>
+            <p class="text-gray-600">
+              We reject the traditional model where the practitioner is the expert 
+              and you're the patient. In our process, no one has altitude over you.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+              3
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Real Results, Fast</h3>
+            <p class="text-gray-600">
+              We're not interested in keeping you in sessions for years. 
+              Our goal is to help you find what you're looking for as quickly as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Who We Serve -->
+      <div class="mb-20">
+        <h2 class="text-4xl font-bold mb-8">Who We Serve</h2>
+        
+        <div class="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 border-l-4 border-primary-500">
           <p class="text-xl text-gray-700 mb-6 leading-relaxed">
-            In Neutral Zone sessions, the practitioner has no altitude over you. 
-            They don't evaluate, interpret, or direct. Everything you say is taken 
-            as truth for that session. You explore what YOU want to explore.
+            Be More Free serves people who are frustrated with traditional approaches to 
+            personal growth. Our clients include:
           </p>
           
-          <p class="text-xl text-gray-700 leading-relaxed">
-            This creates a genuinely neutral space where your own wisdom can emerge—often 
-            leading to insights and changes that years of traditional approaches couldn't achieve.
-          </p>
-        </div>
-      </div>
-
-      <!-- What Happens in a Session -->
-      <div class="mb-20">
-        <h3 class="text-3xl font-bold mb-8 flex items-center">
-          <span class="text-accent-500 mr-4">🎯</span>
-          What Happens in a Session?
-        </h3>
-        
-        <div class="grid gap-4">
-          {[
-            {
-              icon: "🧭",
-              title: "You decide what to examine",
-              description: "There's no predetermined track or agenda"
-            },
-            {
-              icon: "🌟",
-              title: "The practitioner creates neutral space",
-              description: "Without adding their own material or interpretations"
-            },
-            {
-              icon: "🚶",
-              title: "You explore at your own pace",
-              description: "In your own way, following your own direction"
-            },
-            {
-              icon: "💡",
-              title: "Your discoveries are entirely your own",
-              description: "Your choices emerge from your own wisdom"
-            },
-            {
-              icon: "🎯",
-              title: "No homework or frameworks",
-              description: "No 'right' way to do it—just your way"
-            }
-          ].map((item) => (
-            <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary-300 hover:shadow-lg transition-all duration-300 flex items-start space-x-4">
-              <span class="text-3xl">{item.icon}</span>
-              <div>
-                <h4 class="text-xl font-semibold mb-1">{item.title}</h4>
-                <p class="text-gray-600">{item.description}</p>
-              </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start space-x-3">
+              <span class="text-primary-500 text-xl mt-1">•</span>
+              <p class="text-gray-700">
+                <strong>The Frustrated Seeker:</strong> You've tried therapy, coaching, 
+                self-help books, and meditation apps, but still feel stuck
+              </p>
             </div>
-          ))}
-        </div>
-      </div>
-
-      <!-- Is This Right for You -->
-      <div class="mb-20">
-        <h3 class="text-3xl font-bold mb-8 flex items-center">
-          <span class="text-primary-500 mr-4">🤔</span>
-          Is This Right for You?
-        </h3>
-        
-        <p class="text-xl text-gray-700 mb-8">
-          Neutral Zone works especially well for people who:
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-4 mb-12">
-          {[
-            "Are tired of being told what their experience 'really' means",
-            "Have tried multiple approaches without lasting results",
-            "Want to examine difficult material without judgment",
-            "Trust their own wisdom when given actual space",
-            "Are ready to stop managing symptoms and look at what's there"
-          ].map((item) => (
-            <div class="flex items-center space-x-3 bg-gradient-to-r from-primary-50 to-accent-50 rounded-lg p-4">
-              <span class="text-primary-500 text-xl">✓</span>
-              <p class="text-gray-700">{item}</p>
+            <div class="flex items-start space-x-3">
+              <span class="text-primary-500 text-xl mt-1">•</span>
+              <p class="text-gray-700">
+                <strong>The High Performer:</strong> You're successful but sabotaging 
+                yourself and want efficient, real change
+              </p>
             </div>
-          ))}
-        </div>
-
-        <!-- Important Note -->
-        <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-8">
-          <div class="flex items-start space-x-4">
-            <span class="text-amber-500 text-3xl">⚡</span>
-            <div>
-              <p class="font-bold text-gray-900 mb-2 text-xl">Important Note:</p>
-              <p class="text-gray-700 text-lg">
-                Neutral Zone is not therapy, counseling, or medical treatment. 
-                It's not a replacement for medical care if you need it. 
-                It's simply a space to examine your own material without interference.
+            <div class="flex items-start space-x-3">
+              <span class="text-primary-500 text-xl mt-1">•</span>
+              <p class="text-gray-700">
+                <strong>The Therapy Skeptic:</strong> You want help but distrust 
+                traditional therapeutic approaches
+              </p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <span class="text-primary-500 text-xl mt-1">•</span>
+              <p class="text-gray-700">
+                <strong>The Truth Seeker:</strong> You're ready to look at what's 
+                actually there, without someone else's agenda
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- The Difference -->
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-8">The Be More Free Difference</h2>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
+          We're not another therapy practice or coaching business. We're pioneers of a 
+          completely different approach—one that actually helps you be more free.
+        </p>
+        
+        <a href="/neutral-zone" 
+           class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+          Learn About Our Process
+          <span class="ml-2">→</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-24 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"></div>
-    
-    <!-- Animated shapes -->
-    <div class="absolute top-1/4 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-float"></div>
-    <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-accent-400/20 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
-    
-    <div class="container mx-auto px-4 text-center relative z-10">
-      <h2 class="text-5xl md:text-6xl font-black text-white mb-6">
-        Ready to Experience the Difference?
+  <section class="py-24 bg-gradient-to-br from-primary-50 to-accent-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6">
+        Ready to Be More Free?
       </h2>
-      <p class="text-2xl text-white/90 mb-10 max-w-3xl mx-auto">
-        Your first 30-minute session is free. See for yourself what happens 
-        when you have actual space to look at what's there.
+      <p class="text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
+        Experience the difference for yourself with a free 30-minute trial session.
       </p>
       <a href="/booking/free-trial" 
-         class="group bg-white text-primary-700 px-12 py-6 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center">
-        Book Your Free Trial Session
-        <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
+         class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-10 py-5 rounded-full text-xl font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+        Book Your Free Trial
+        <span class="ml-3">→</span>
       </a>
     </div>
   </section>

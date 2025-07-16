@@ -203,6 +203,10 @@
 - [✓] Design card-based layouts with shadows
 - [✓] Add floating animations and visual interest
 - [✓] Modernize footer with gradient background
+- [✓] Fix branding: Be More Free as company, Neutral Zone as process
+- [✓] Create proper About page for Be More Free company
+- [✓] Move process description to /neutral-zone page
+- [✓] Update all branding references throughout site
 
 ## Task Status Key
 - [ ] Not started

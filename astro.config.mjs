@@ -15,7 +15,7 @@ export default defineConfig({
         'https://bemorefree.com/',
         'https://bemorefree.com/about/',
         'https://bemorefree.com/neutral-zone/',
-        'https://bemorefree.com/practitioner/',
+        'https://bemorefree.com/facilitator/',
         'https://bemorefree.com/blog/',
         'https://bemorefree.com/booking/free-trial/',
         'https://bemorefree.com/booking/session/',

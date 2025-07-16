@@ -1,5 +1,5 @@
 /* TEAM */
-Founder & Practitioner: [Name]
+Founder & Facilitator: [Name]
 Site: https://bemorefree.com
 Location: [Location]
 

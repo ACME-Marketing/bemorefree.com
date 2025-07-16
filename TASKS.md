@@ -36,17 +36,17 @@
 - [✓] Add bottom CTA section with booking emphasis
 - [✓] Ensure all sections are mobile-responsive
 
-## Milestone 4: About & Practitioner Pages
+## Milestone 4: About & Facilitator Pages
 - [✓] Create About page explaining Neutral Zone approach
 - [✓] Write content emphasizing non-directive philosophy
 - [✓] Add "What Happens in a Session" section
-- [ ] Build practitioner profile page with photo
-- [ ] Add practitioner philosophy section
+- [ ] Build facilitator profile page with photo
+- [ ] Add facilitator philosophy section
 - [ ] Include "Licensed Psychedelic Facilitator" credential
 - [✓] Create "Is This Right for You?" self-assessment
 - [✓] Add clear CTAs to book throughout pages
 - [ ] Implement breadcrumb navigation
-- [ ] Cross-link between about and practitioner pages
+- [ ] Cross-link between about and facilitator pages
 
 ## Milestone 5: Blog System Integration
 - [ ] Set up GraphQL client for WordPress
@@ -150,7 +150,7 @@
 - [ ] Set up Google My Business profile
 - [ ] Create launch announcement content
 - [ ] Prepare customer support documentation
-- [ ] Brief practitioner on website features
+- [ ] Brief facilitator on website features
 - [ ] Set up monitoring alerts
 - [ ] Create backup and rollback plan
 - [ ] Schedule launch date/time
@@ -178,7 +178,7 @@
 - [ ] Add advanced booking features
 - [ ] Implement A/B testing for CTAs
 - [ ] Create client portal (Phase 2)
-- [ ] Plan practitioner training section
+- [ ] Plan facilitator training section
 
 ## Ongoing Tasks (Weekly/Monthly)
 - [ ] Publish new blog post (weekly)
@@ -214,7 +214,7 @@
 - [✓] Add comprehensive meta tags and Open Graph support
 - [✓] Create humans.txt for transparency
 - [✓] Create blog listing page with modern design
-- [✓] Create practitioner profile page
+- [✓] Create facilitator profile page
 
 ## Task Status Key
 - [ ] Not started

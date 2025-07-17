@@ -74,15 +74,15 @@
 
 ## Milestone 7: Booking System Integration
 - [ ] Research Cal.com embed vs redirect options
-- [ ] Create free trial booking page (30 min)
-- [ ] Create paid session booking page (60 min)
-- [ ] Set up Cal.com event types in account
-- [ ] Configure n8n webhook for bookings
-- [ ] Build thank you/confirmation page
-- [ ] Add booking availability widget
-- [ ] Create "What to Expect" pre-booking content
-- [ ] Test booking flow end-to-end
-- [ ] Set up booking confirmation emails via n8n
+- [✓] Create free-trial booking page (30 min)
+- [✓] Create paid session booking page (60 min)
+- [✓] Set up Cal.com event types in account
+- [✓] Configure n8n webhook for bookings
+- [✓] Build thank you/confirmation page
+- [✓] Add booking availability widget
+- [✓] Create "What to Expect" pre-booking content
+- [✓] Test booking flow end-to-end
+- [✓] Set up booking confirmation emails via n8n
 
 ## Milestone 8: Lead Generation & Ebook
 - [ ] Create contact form component
@@ -221,6 +221,18 @@
 - [✓] Modernize blog post page design to match site aesthetic
 - [✓] Add breadcrumb navigation and improved sidebar
 - [✓] Add call-to-action section in blog posts
+- [✓] Create free-trial page with complete content and modern design
+- [✓] Make Neutral Zone principle cards clickable
+- [✓] Create dedicated pages for all 6 principles:
+  - [✓] No One Has Altitude Over You (/principles/no-altitude)
+  - [✓] Everything You Say is Truth (/principles/truth)
+  - [✓] Hours, Not Years (/principles/hours-not-years)
+  - [✓] Find Your Own Answers (/principles/find-answers)
+  - [✓] Complete Acceptance (/principles/complete-acceptance)
+  - [✓] No Prerequisites (/principles/no-prerequisites)
+- [✓] Cross-link all principle pages with related principles section
+- [✓] Maintain consistent branding and modern design across all new pages
+- [✓] Ensure principle pages don't appear in main navigation
 
 ## Task Status Key
 - [ ] Not started

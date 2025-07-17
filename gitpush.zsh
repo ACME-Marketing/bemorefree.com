@@ -1,5 +1,5 @@
-#!/bin/bash
-cd /Users/waynesheppard/Development/acme-marketing/bemorefree.com
+#!/bin/zsh
+cd /Users/waynesheppard/Development/ACME-Marketing/bemorefree.com
 
 # Show status
 echo "Git Status:"
@@ -9,9 +9,19 @@ git status
 echo -e "\nAdding all changes..."
 git add -A
 
+# Prompt for commit message
+echo -e "\nEnter commit message:"
+read -r commit_message
+
+# Use default message if none provided
+if [[ -z "$commit_message" ]]; then
+  commit_message="Update: automated commit"
+  echo "Using default message: $commit_message"
+fi
+
 # Commit
 echo -e "\nCommitting changes..."
-git commit -m "Minor cosmetic changes"
+git commit -m "$commit_message"
 
 # Push to main
 echo -e "\nPushing to origin main..."

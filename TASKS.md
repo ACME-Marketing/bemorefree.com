@@ -49,15 +49,15 @@
 - [ ] Cross-link between about and facilitator pages
 
 ## Milestone 5: Blog System Integration
-- [ ] Set up GraphQL client for WordPress
-- [ ] Create blog post type definitions
-- [ ] Build blog listing page with pagination
-- [ ] Create blog post template with dynamic routing
-- [ ] Add featured image support with lazy loading
-- [ ] Implement excerpt display on listing
-- [ ] Add reading time calculation
+- [✓] Set up GraphQL client for WordPress
+- [✓] Create blog post type definitions
+- [✓] Build blog listing page with pagination
+- [✓] Create blog post template with dynamic routing
+- [✓] Add featured image support with lazy loading
+- [✓] Implement excerpt display on listing
+- [✓] Add reading time calculation
 - [ ] Create category filtering (stretch goal)
-- [ ] Build "Related Posts" component
+- [✓] Build "Related Posts" component
 - [ ] Add social sharing buttons (no comments)
 
 ## Milestone 6: Initial Blog Content
@@ -215,6 +215,12 @@
 - [✓] Create humans.txt for transparency
 - [✓] Create blog listing page with modern design
 - [✓] Create facilitator profile page
+- [✓] Fix GraphQL filtering to only fetch 'bemorefree' and 'all' tagged posts
+- [✓] Standardize URL generation across all blog components
+- [✓] Create utility functions for consistent slug/date handling
+- [✓] Modernize blog post page design to match site aesthetic
+- [✓] Add breadcrumb navigation and improved sidebar
+- [✓] Add call-to-action section in blog posts
 
 ## Task Status Key
 - [ ] Not started

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { graphQLClient, gql } from '../../lib/graphql';
+import { normalizeSlug, formatDate, calculateReadingTime } from '../../lib/utils.js';
 
 const GET_POSTS = gql`
   query GetPosts {
@@ -9,6 +10,7 @@ const GET_POSTS = gql`
         title
         uri
         excerpt
+        content
         date
         featuredImage {
           node {
@@ -62,12 +64,9 @@ try {
       {posts.length > 0 ? (
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {posts.map((post) => {
-            const postSlug = post.uri.replace(/^\/|\/$/g, '');
-            const postDate = new Date(post.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            });
+            const postSlug = normalizeSlug(post.uri);
+            const postDate = formatDate(post.date);
+            const readingTime = calculateReadingTime(post.content || post.excerpt || '');
             
             return (
               <article class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
@@ -86,10 +85,12 @@ try {
                 <div class="p-8">
                   <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
                     <time datetime={post.date}>{postDate}</time>
+                    <span>•</span>
+                    <span>{readingTime} min read</span>
                     {post.tags && post.tags.nodes.length > 0 && (
                       <>
                         <span>•</span>
-                        <span>{post.tags.nodes[0].name}</span>
+                        <span class="text-primary-600 font-medium">{post.tags.nodes[0].name}</span>
                       </>
                     )}
                   </div>

@@ -61,6 +61,13 @@ const differentiators = [
 ---
 
 <BaseLayout title="Be More Free - Finally Stop Being Stuck">
+  <!-- Cal.com Embed Script -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "neutral-zone-free-session", {origin:"https://app.cal.com"});
+    
+    Cal.ns["neutral-zone-free-session"]("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#af18d3"},"dark":{"cal-brand":"#7513c0"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
   <!-- Hero Section with Dynamic Gradient -->
   <section class="relative min-h-[45vh] flex items-center justify-center overflow-hidden">
     <!-- Animated gradient background -->
@@ -82,11 +89,14 @@ const differentiators = [
         helps you find real answers in hours, not years—without someone else's agenda.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/booking/free-trial" 
-           class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl">
+        <button 
+           data-cal-link="disendarkenment/neutral-zone-free-session"
+           data-cal-namespace="neutral-zone-free-session"
+           data-cal-config='{"layout":"month_view","theme":"dark"}'
+           class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
           Book Your Free 30-Minute Session
           <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-        </a>
+        </button>
         <a href="/neutral-zone" 
            class="bg-transparent text-white px-8 py-4 rounded-full text-lg font-bold border-2 border-white/50 hover:bg-white/10 hover:border-white transition-all duration-300">
           How It Works
@@ -309,11 +319,14 @@ const differentiators = [
         Your first 30-minute Neutral Zone session is free. Find out what happens 
         when you have actual space to look at what's keeping you stuck.
       </p>
-      <a href="/booking/free-trial" 
-         class="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center">
+      <button 
+         data-cal-link="disendarkenment/neutral-zone-free-session"
+         data-cal-namespace="neutral-zone-free-session"
+         data-cal-config='{"layout":"month_view","theme":"dark"}'
+         class="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
         Book Your Free Session Now
         <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
-      </a>
+      </button>
     </div>
   </section>
 

@@ -24,32 +24,38 @@ const differentiators = [
   {
     icon: "🎯",
     title: "No One Has Altitude Over You",
-    description: "The facilitator doesn't evaluate, interpret, or direct. You explore what YOU want to explore."
+    description: "The facilitator doesn't evaluate, interpret, or direct. You explore what YOU want to explore.",
+    slug: "no-altitude"
   },
   {
     icon: "💯",
     title: "Everything You Say is Truth",
-    description: "No challenging your reality or telling you what you 'really' mean. Your experience is valid."
+    description: "No challenging your reality or telling you what you 'really' mean. Your experience is valid.",
+    slug: "truth"
   },
   {
     icon: "⚡",
     title: "Hours, Not Years",
-    description: "Stop managing symptoms with endless coping mechanisms. Address what's actually there."
+    description: "Stop managing symptoms with endless coping mechanisms. Address what's actually there.",
+    slug: "hours-not-years"
   },
   {
     icon: "🧭",
     title: "Find Your Own Answers",
-    description: "No advice, no frameworks, no predetermined paths. Your wisdom emerges with space."
+    description: "No advice, no frameworks, no predetermined paths. Your wisdom emerges with space.",
+    slug: "find-answers"
   },
   {
     icon: "🤝",
     title: "Complete Acceptance",
-    description: "Examine ALL parts of yourself—even the ones you hate—without judgment."
+    description: "Examine ALL parts of yourself—even the ones you hate—without judgment.",
+    slug: "complete-acceptance"
   },
   {
     icon: "🚀",
     title: "No Prerequisites",
-    description: "No forms, no diagnosis, no 'therapeutic relationship' to build. Just start looking."
+    description: "No forms, no diagnosis, no 'therapeutic relationship' to build. Just start looking.",
+    slug: "no-prerequisites"
   }
 ];
 ---
@@ -179,7 +185,7 @@ const differentiators = [
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {differentiators.map((item, index) => (
-          <div class="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+          <a href={`/principles/${item.slug}`} class="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden cursor-pointer">
             <!-- Gradient overlay on hover -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary-50 to-accent-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             
@@ -192,7 +198,7 @@ const differentiators = [
                 {item.description}
               </p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

@@ -61,6 +61,13 @@ const testimonials = [
 ---
 
 <BaseLayout title="Book Your Free Trial - Be More Free">
+  <!-- Cal.com Embed Script -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", {origin:"https://app.cal.com"});
+    
+    Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
   <!-- Hero Section with Dynamic Gradient -->
   <section class="relative min-h-[45vh] flex items-center justify-center overflow-hidden">
     <!-- Animated gradient background -->
@@ -322,22 +329,26 @@ const testimonials = [
         </p>
         
         <!-- Placeholder for Cal.com widget -->
-        <div class="bg-gray-100 rounded-xl p-8 text-center">
-          <p class="text-gray-700 mb-4 font-medium">Booking Calendar</p>
-          <p class="text-gray-600 text-sm mb-6">
-            This will be replaced with the Cal.com booking widget integration.
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Book Your Free 30-Minute Session</h3>
+          <p class="text-gray-600 mb-6">
+            Choose a time that works for you. Sessions are conducted via phone, Google Meet, or Zoom.
           </p>
-          <a href="#" 
-             class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+          
+          <button 
+             data-cal-link="be-more-free/30min"
+             data-cal-namespace="30min"
+             data-cal-config='{"layout":"month_view"}'
+             class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center cursor-pointer">
             Open Booking Calendar
             <span class="ml-2">→</span>
-          </a>
+          </button>
+          
+          <p class="text-sm text-gray-500 mt-6">
+            <strong>Note:</strong> The Neutral Zone process is not therapy, counseling, or medical treatment. 
+            It's a different approach to examining your own material in a neutral space.
+          </p>
         </div>
-        
-        <p class="text-sm text-gray-500 mt-6">
-          <strong>Note:</strong> The Neutral Zone process is not therapy, counseling, or medical treatment. 
-          It's a different approach to examining your own material in a neutral space.
-        </p>
       </div>
     </div>
   </section>

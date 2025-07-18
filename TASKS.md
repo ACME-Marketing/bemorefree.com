@@ -83,6 +83,12 @@
 - [✓] Create "What to Expect" pre-booking content
 - [✓] Test booking flow end-to-end
 - [✓] Set up booking confirmation emails via n8n
+- [✓] Integrate Cal.com embed on homepage for free 30-min sessions
+- [✓] Update Cal.com configuration to use 'be-more-free/30min' booking link
+- [✓] Create Services page with both free trial and 1-hour session booking
+- [✓] Integrate 1-hour session Cal.com embed ('be-more-free/neutral-zone-1hr')
+- [✓] Add Services link to main navigation menu
+- [✓] Update footer to include Services page link
 
 ## Milestone 8: Lead Generation & Ebook
 - [ ] Create contact form component

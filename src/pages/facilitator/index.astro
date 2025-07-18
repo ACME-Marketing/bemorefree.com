@@ -154,11 +154,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
         Experience the Neutral Zone process for yourself with a free 30-minute trial session.
       </p>
-      <a href="/booking/free-trial" 
-         class="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center">
+      <button 
+         data-cal-link="be-more-free/30min"
+         data-cal-namespace="30min"
+         data-cal-config='{"layout":"month_view"}'
+         class="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
         Book Your Free Session
         <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
-      </a>
+      </button>
     </div>
   </section>
 </BaseLayout>

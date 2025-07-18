@@ -92,6 +92,12 @@
 - [✓] Fix header Free Trial button to use Cal.com (not link to page)
 - [✓] Move Cal.com 30min script to global BaseLayout for site-wide access
 - [✓] Remove redundant Cal.com scripts from individual pages
+- [✓] Update ALL page bottom CTAs to use Cal.com integration instead of booking page links
+  - [✓] About page CTA
+  - [✓] Facilitator page CTA
+  - [✓] All 6 principle pages CTAs
+  - [✓] Blog post template CTA
+  - [✓] Blog index fallback CTA
 
 ## Milestone 8: Lead Generation & Ebook
 - [ ] Create contact form component

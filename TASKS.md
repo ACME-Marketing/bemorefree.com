@@ -112,15 +112,15 @@
 - [ ] Add success message after submission
 
 ## Milestone 9: Legal & Compliance Pages
-- [ ] Write Privacy Policy with confidentiality terms
-- [ ] Create Terms of Service page
-- [ ] Draft medical/therapy disclaimer
-- [ ] Add "Not a Healthcare Service" notices
-- [ ] Include coaching service clarification
+- [✓] Write Privacy Policy with confidentiality terms
+- [✓] Create Terms of Service page
+- [✓] Draft medical/therapy disclaimer
+- [✓] Add "Not a Healthcare Service" notices
+- [✓] Include coaching service clarification
 - [ ] Create cookie policy (if needed)
-- [ ] Add legal pages to footer navigation
+- [✓] Add legal pages to footer navigation
 - [ ] Ensure GDPR compliance for forms
-- [ ] Add required disclaimers to booking flow
+- [✓] Add required disclaimers to booking flow
 - [ ] Have legal review of all compliance content
 
 ## Milestone 10: SEO & Performance Optimization
@@ -248,6 +248,12 @@
 - [✓] Cross-link all principle pages with related principles section
 - [✓] Maintain consistent branding and modern design across all new pages
 - [✓] Ensure principle pages don't appear in main navigation
+- [✓] Create comprehensive legal pages with strong disclaimers:
+  - [✓] Privacy Policy (/privacy)
+  - [✓] Terms of Service (/terms) 
+  - [✓] Disclaimer (/disclaimer)
+- [✓] All legal pages emphasize "not therapy" positioning and include Cal.com CTAs
+- [✓] Update ALL page bottom CTAs to use Cal.com integration
 
 ## Task Status Key
 - [ ] Not started

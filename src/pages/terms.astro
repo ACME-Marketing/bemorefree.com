@@ -1,0 +1,270 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Terms of Service - Be More Free">
+  <!-- Hero Section -->
+  <section class="relative py-24 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
+    
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+        Terms of <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Service</span>
+      </h1>
+      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        Understanding our service agreement and your rights
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="prose prose-lg max-w-none">
+        <p class="text-lg text-gray-600 mb-8">
+          <strong>Effective Date:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+
+        <!-- Introduction -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Agreement to Terms</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Welcome to Be More Free. These Terms of Service ("Terms") govern your use of our 
+            website and the Neutral Zone process services. By accessing our website or using 
+            our services, you agree to be bound by these Terms.
+          </p>
+          <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-6">
+            <p class="text-lg text-gray-700 font-semibold">
+              IMPORTANT: The Neutral Zone process is NOT therapy, counseling, psychology, 
+              psychiatry, or any form of mental health treatment. It is a unique exploration 
+              process where you examine your own material in a neutral space.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service Description -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Description of Services</h2>
+          
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">What We Offer</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Neutral Zone Sessions:</strong> Individual exploration sessions conducted via phone, Google Meet, or Zoom</li>
+            <li><strong>Free Trial Sessions:</strong> 30-minute introductory sessions at no cost</li>
+            <li><strong>Regular Sessions:</strong> 60-minute sessions for deeper exploration</li>
+            <li><strong>Educational Content:</strong> Blog posts and resources about the Neutral Zone process</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">What We Are NOT</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Therapy, counseling, or psychotherapy services</li>
+            <li>Medical, psychiatric, or psychological treatment</li>
+            <li>A licensed healthcare service</li>
+            <li>A substitute for professional medical or mental health care</li>
+            <li>Crisis intervention or emergency services</li>
+          </ul>
+        </div>
+
+        <!-- User Responsibilities -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Your Responsibilities</h2>
+          
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">When Using Our Services, You Agree To:</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Provide accurate information when booking sessions</li>
+            <li>Understand that this is not therapy or medical treatment</li>
+            <li>Take responsibility for your own choices and actions</li>
+            <li>Seek appropriate medical or mental health care when needed</li>
+            <li>Respect the facilitator and the session boundaries</li>
+            <li>Pay for sessions as agreed</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Medical and Mental Health Disclaimer</h3>
+          <div class="bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-300 rounded-2xl p-6 mb-6">
+            <p class="text-lg text-gray-700 mb-4">
+              <strong>You acknowledge and agree that:</strong>
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>You are responsible for your own physical and mental health</li>
+              <li>If you are experiencing a mental health crisis, you will contact appropriate emergency services or mental health professionals</li>
+              <li>The Neutral Zone process is not a substitute for medical care, psychiatric treatment, or psychological therapy</li>
+              <li>You will not rely on our services for medical or psychological advice</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Booking and Payment -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Booking and Payment Terms</h2>
+          
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Session Fees</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Free Trial Sessions:</strong> 30 minutes at no cost</li>
+            <li><strong>Regular Sessions:</strong> $150 per 60-minute session</li>
+            <li>Payment is required at the time of booking</li>
+            <li>Fees are subject to change with notice</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Cancellation Policy</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Sessions may be rescheduled with at least 24 hours notice</li>
+            <li>Cancellations with less than 24 hours notice may forfeit the session fee</li>
+            <li>No-shows forfeit the full session fee</li>
+            <li>We reserve the right to reschedule sessions due to facilitator availability</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Refund Policy</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Refunds are considered on a case-by-case basis</li>
+            <li>Technical issues preventing session completion may qualify for refunds</li>
+            <li>Dissatisfaction with the Neutral Zone process does not automatically qualify for refunds</li>
+            <li>Refund requests must be made within 7 days of the session</li>
+          </ul>
+        </div>
+
+        <!-- Limitations and Disclaimers -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Limitations and Disclaimers</h2>
+          
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">No Guarantees</h3>
+          <p class="text-lg text-gray-700 mb-6">
+            We make no promises, guarantees, or warranties about:
+          </p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Specific outcomes or results from sessions</li>
+            <li>Resolution of any particular issue or concern</li>
+            <li>Improvement in any condition or situation</li>
+            <li>The suitability of our services for your specific needs</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Limitation of Liability</h3>
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-2xl p-6 mb-6">
+            <p class="text-lg text-gray-700 mb-4">
+              TO THE FULLEST EXTENT PERMITTED BY LAW:
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Be More Free and its facilitators shall not be liable for any indirect, incidental, special, or consequential damages</li>
+              <li>Our total liability for any claim shall not exceed the amount you paid for the specific session in question</li>
+              <li>We are not responsible for any decisions you make or actions you take based on your session experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Confidentiality -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Confidentiality</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            While we maintain confidentiality of session content as described in our Privacy Policy, 
+            you understand that:
+          </p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>This confidentiality is not protected by attorney-client privilege or medical confidentiality laws</li>
+            <li>We may be required to disclose information if compelled by law</li>
+            <li>Confidentiality may be limited in cases of imminent danger to self or others</li>
+          </ul>
+        </div>
+
+        <!-- Intellectual Property -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Intellectual Property</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            All content on our website, including text, graphics, logos, and the Neutral Zone 
+            methodology, is owned by Be More Free and protected by intellectual property laws. 
+            You may not:
+          </p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Copy, reproduce, or distribute our content without permission</li>
+            <li>Use our trademarks or branding without authorization</li>
+            <li>Attempt to replicate or teach the Neutral Zone process without proper training and authorization</li>
+            <li>Record sessions without explicit written consent</li>
+          </ul>
+        </div>
+
+        <!-- Website Use -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Website Use Guidelines</h2>
+          <p class="text-lg text-gray-700 mb-6">When using our website, you agree not to:</p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Use the site for any unlawful purpose</li>
+            <li>Attempt to gain unauthorized access to our systems</li>
+            <li>Interfere with the website's functionality</li>
+            <li>Post or transmit harmful or offensive content</li>
+            <li>Violate any applicable laws or regulations</li>
+          </ul>
+        </div>
+
+        <!-- Termination -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Termination</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Either party may terminate the service relationship at any time. We reserve the 
+            right to refuse service or terminate access to our website for any reason, 
+            including violation of these Terms.
+          </p>
+        </div>
+
+        <!-- Governing Law -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Governing Law</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            These Terms are governed by the laws of [Your State/Country]. Any disputes 
+            will be resolved in the courts of [Your Jurisdiction].
+          </p>
+        </div>
+
+        <!-- Changes to Terms -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Changes to These Terms</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            We may update these Terms from time to time. We will notify you of material 
+            changes by posting the updated Terms on our website and updating the effective 
+            date. Your continued use of our services after changes constitutes acceptance 
+            of the new Terms.
+          </p>
+        </div>
+
+        <!-- Severability -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Severability</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            If any portion of these Terms is found to be unenforceable, the remaining 
+            portions will remain in full force and effect.
+          </p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Questions About These Terms?</h2>
+          <p class="text-lg text-gray-700 mb-4">
+            If you have questions about these Terms of Service, please contact us:
+          </p>
+          <div class="text-gray-700">
+            <p class="mb-2"><strong>Be More Free</strong></p>
+            <p class="mb-2">Email: [Your Email Address]</p>
+            <p class="mb-2">Website: <a href="https://bemorefree.com" class="text-primary-600 hover:text-primary-700">bemorefree.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-900">
+        Ready to Experience the Neutral Zone?
+      </h2>
+      <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+        Now that you understand our terms, book your free trial session to experience 
+        the Neutral Zone process for yourself.
+      </p>
+      <button 
+         data-cal-link="be-more-free/30min"
+         data-cal-namespace="30min"
+         data-cal-config='{"layout":"month_view"}'
+         class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center cursor-pointer">
+        Book Your Free Trial
+        <span class="ml-2">→</span>
+      </button>
+    </div>
+  </section>
+</BaseLayout>

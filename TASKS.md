@@ -89,6 +89,9 @@
 - [✓] Integrate 1-hour session Cal.com embed ('be-more-free/neutral-zone-1hr')
 - [✓] Add Services link to main navigation menu
 - [✓] Update footer to include Services page link
+- [✓] Fix header Free Trial button to use Cal.com (not link to page)
+- [✓] Move Cal.com 30min script to global BaseLayout for site-wide access
+- [✓] Remove redundant Cal.com scripts from individual pages
 
 ## Milestone 8: Lead Generation & Ebook
 - [ ] Create contact form component

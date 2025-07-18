@@ -3,15 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Services - Be More Free">
-  <!-- Cal.com Embed Scripts for Both Services -->
+  <!-- Cal.com Embed Script for 1-Hour Sessions -->
   <script type="text/javascript">
-    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-    
-    // Free 30-minute trial
-    Cal("init", "30min", {origin:"https://app.cal.com"});
-    Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-    
-    // 1-hour paid session
+    // 1-hour paid session (30min script is loaded globally)
     Cal("init", "neutral-zone-1hr", {origin:"https://app.cal.com"});
     Cal.ns["neutral-zone-1hr"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
   </script>

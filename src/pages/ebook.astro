@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<BaseLayout 
+  title="Download Free Ebook - Be More Free"
+  description="Download our free ebook to learn more about the Neutral Zone process and how it can help you find your own answers."
+>
+  <!-- Hero Section -->
+  <section class="relative pt-16 pb-12 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50">
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center">
+        <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+          Go Deeper Than Therapy
+        </h1>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+          Download our free guide, "The Neutral Zone: A Practical Alternative to Therapy," and discover the principles that have helped people achieve lasting change in hours, not years.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ebook Download Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Ebook Cover Placeholder -->
+        <div class="text-center">
+          <div class="bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl p-2 inline-block shadow-2xl">
+            <div class="bg-white rounded-xl p-8">
+              <div class="w-64 h-80 bg-gradient-to-br from-primary-200 to-accent-200 rounded-lg mx-auto flex flex-col items-center justify-center text-white text-center p-4">
+                <h2 class="text-3xl font-bold">The Neutral Zone</h2>
+                <p class="text-lg mt-4">A Practical Alternative to Therapy</p>
+                <p class="text-sm mt-auto">by Be More Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Form -->
+        <div>
+          <ContactForm 
+            ebookTitle="The Neutral Zone"
+            formAction="/thank-you"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You'll Learn Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Inside the Ebook, You'll Discover:</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-lg mb-2">The "No Altitude" Principle</h3>
+          <p class="text-gray-600">Why a level playing field is the key to unlocking your own wisdom.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-lg mb-2">The Power of "Truth"</h3>
+          <p class="text-gray-600">How accepting what you say as absolute truth accelerates discovery.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-lg mb-2">"Hours, Not Years"</h3>
+          <p class="text-gray-600">The framework for rapid change that traditional methods miss.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

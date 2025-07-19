@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Thank You - Be More Free"
+  description="Thank you for your interest in the Neutral Zone process."
+>
+  <!-- Hero Section -->
+  <section class="relative pt-16 pb-24 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50">
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+          Thank You!
+        </h1>
+        <p class="text-2xl text-gray-700 mb-8">
+          Your free ebook is on its way to your inbox.
+        </p>
+        <p class="text-lg text-gray-600 mb-12">
+          Please allow a few minutes for it to arrive. While you wait, you can explore more about the Neutral Zone or book your free trial session.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="/about" class="group bg-primary-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center">
+            Explore the Process
+          </a>
+          <button 
+             data-cal-link="be-more-free/30min"
+             data-cal-namespace="30min"
+             data-cal-config='{"layout":"month_view"}'
+             class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
+            Book a Free Trial
+            <span class="ml-3 group-hover:translate-x-1 transition-transform">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

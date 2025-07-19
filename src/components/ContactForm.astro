@@ -4,10 +4,9 @@ import type { HTMLAttributes } from 'astro/types';
 
 type Props = {
   ebookTitle: string;
-  formAction: string;
 } & HTMLAttributes<'form'>;
 
-const { ebookTitle, formAction, ...attrs } = Astro.props;
+const { ebookTitle, ...attrs } = Astro.props;
 ---
 
 <form

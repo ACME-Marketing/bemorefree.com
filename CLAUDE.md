@@ -30,7 +30,7 @@ Neutral Zone is NOT therapy. It's a completely non-directive, non-evaluative, an
 - **CMS:** Headless WordPress via GraphQL (already configured)
 - **Hosting:** Netlify
 - **Automation:** n8n at https://n8n.srv874889.hstgr.cloud
-- **Booking:** Cal.com integration via n8n
+- **Booking:** Direct Cal.com integration
 - **No Database:** This is a static site
 - **No Comments:** Blog posts don't have comments
 - **No Auth:** No user accounts or client portal in MVP

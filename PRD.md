@@ -159,7 +159,7 @@ Unlike traditional therapy that often involves years of talking with minimal res
 
 ### Core Features
 1. **Booking System**
-   - Integration with Cal.com via n8n
+   - Direct integration with Cal.com
    - Direct booking for paid sessions
    - Free trial session booking (30 minutes)
    

@@ -24,7 +24,7 @@ This website serves as the primary digital presence for Be More Free, focusing o
 - **CMS:** Headless WordPress (via GraphQL)
 - **Hosting:** Netlify
 - **Automation:** n8n (https://n8n.srv874889.hstgr.cloud)
-- **Booking:** Cal.com integration
+- **Booking:** Direct Cal.com integration
 
 ## 🏃‍♂️ Getting Started
 

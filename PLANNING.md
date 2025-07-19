@@ -26,7 +26,7 @@ Build a high-performance, SEO-optimized static website that converts visitors se
 ### Data Flow
 1. **Content Creation**: WordPress → GraphQL API → Astro at build time
 2. **Content Updates**: WordPress webhook → n8n → Netlify rebuild trigger
-3. **Booking Flow**: Website → Cal.com embed/redirect → n8n → email confirmations
+3. **Booking Flow**: Website → Direct Cal.com embed → email confirmations
 4. **Lead Generation**: Contact form → n8n → email ebook → CRM (future)
 
 ### Page Architecture
@@ -79,8 +79,8 @@ Build a high-performance, SEO-optimized static website that converts visitors se
   - Webhooks: WordPress post publish, form submissions
 
 - **Cal.com** - Appointment scheduling
-  - Integration: Via n8n API
-  - Implementation: TBD (embed vs redirect)
+  - Integration: Direct embed
+  - Implementation: Implemented with direct embed
   - Types: 30-min free, 60-min paid
 
 ### Hosting & Deployment

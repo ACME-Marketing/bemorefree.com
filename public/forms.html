@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hidden Forms for Netlify</title>
+</head>
+<body style="display: none;">
+  <!-- This hidden form helps Netlify detect the form during build -->
+  <form name="ebook-download" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="bot-field" />
+    <input type="email" name="email" />
+  </form>
+</body>
+</html>

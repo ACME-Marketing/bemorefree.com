@@ -2,19 +2,6 @@
   publish = "dist"
   command = "npm install && npm run build"
 
-# Form handling
-[[redirects]]
-  from = "/thank-you"
-  to = "/thank-you"
-  status = 200
-
-# Handle form submissions
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
-
-# Default form success redirect
+# Form handling configuration
 [build.environment]
   NETLIFY_FORMS_REDIRECT = "/thank-you"

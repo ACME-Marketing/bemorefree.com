@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Services - Be More Free">
+  <!-- Cal.com Embed Script for 1-Hour Sessions -->
+  <script type="text/javascript">
+    // 1-hour paid session (30min script is loaded globally)
+    Cal("init", "neutral-zone-1hr", {origin:"https://app.cal.com"});
+    Cal.ns["neutral-zone-1hr"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+
+  <!-- Hero Section -->
+  <section class="relative py-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-accent-200/20 to-transparent rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-primary-200/20 to-transparent rounded-full blur-3xl"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+          Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Services</span>
+        </h1>
+        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+          Choose the option that works best for you—from a free trial to explore the process 
+          to full sessions for deeper transformation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        
+        <!-- Free Trial -->
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200 relative overflow-hidden">
+          <div class="absolute top-4 right-4">
+            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">FREE</span>
+          </div>
+          
+          <div class="mb-6">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">
+              Free Trial Session
+            </h2>
+            <p class="text-gray-700 text-lg">
+              Experience the Neutral Zone process with no commitment
+            </p>
+          </div>
+
+          <div class="mb-8">
+            <div class="text-4xl font-black text-green-600 mb-2">
+              $0
+            </div>
+            <p class="text-gray-600">30-minute session</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="font-semibold text-gray-900 mb-4">What's Included:</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Complete Neutral Zone experience</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">No evaluation or interpretation</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Explore whatever you want to look at</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Phone, Google Meet, or Zoom</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">No pressure or sales pitch</span>
+              </li>
+            </ul>
+          </div>
+
+          <button 
+             data-cal-link="be-more-free/30min"
+             data-cal-namespace="30min"
+             data-cal-config='{"layout":"month_view"}'
+             class="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
+            Book Your Free Trial
+          </button>
+        </div>
+
+        <!-- Full Session -->
+        <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 border-2 border-primary-200 relative overflow-hidden">
+          <div class="absolute top-4 right-4">
+            <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-semibold">MOST POPULAR</span>
+          </div>
+          
+          <div class="mb-6">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">
+              Neutral Zone Session
+            </h2>
+            <p class="text-gray-700 text-lg">
+              Full session for deeper exploration and transformation, no rush, session length may vary
+            </p>
+          </div>
+
+          <div class="mb-8">
+            <div class="text-4xl font-black text-primary-600 mb-2">
+              $150
+            </div>
+            <p class="text-gray-600">60-minute session (3 hour blocks, minutes deducted as used)</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="font-semibold text-gray-900 mb-4">What's Included:</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="text-primary-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Full 60-minute Neutral Zone session</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Complete acceptance of your material</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">No prerequisites or forms required</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Your pace, your direction, your insights</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary-500 mr-3 text-lg">✓</span>
+                <span class="text-gray-700">Confidential (with legal limitations)</span>
+              </li>
+            </ul>
+          </div>
+
+          <button 
+             data-cal-link="be-more-free/neutral-zone-1hr"
+             data-cal-namespace="neutral-zone-1hr"
+             data-cal-config='{"layout":"month_view"}'
+             class="w-full bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
+            Book Your Session
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-black text-center text-gray-900 mb-12">
+        How <span class="text-accent-500">Sessions</span> Work
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="text-center group">
+          <div class="relative inline-block mb-6">
+            <div class="w-24 h-24 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center text-white text-4xl font-black shadow-xl group-hover:shadow-2xl transition-shadow">
+              1
+            </div>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Choose Your Time</h3>
+          <p class="text-gray-600">
+            Select a time that works for you using our calendar system. 
+            Sessions available worldwide via phone or video.
+          </p>
+        </div>
+        
+        <div class="text-center group">
+          <div class="relative inline-block mb-6">
+            <div class="w-24 h-24 bg-gradient-to-br from-accent-500 to-accent-700 rounded-2xl flex items-center justify-center text-white text-4xl font-black shadow-xl group-hover:shadow-2xl transition-shadow">
+              2
+            </div>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Join Your Session</h3>
+          <p class="text-gray-600">
+            Connect via your preferred method. No preparation needed—
+            just bring whatever you want to explore.
+          </p>
+        </div>
+        
+        <div class="text-center group">
+          <div class="relative inline-block mb-6">
+            <div class="w-24 h-24 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl flex items-center justify-center text-white text-4xl font-black shadow-xl group-hover:shadow-2xl transition-shadow">
+              3
+            </div>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Explore & Discover</h3>
+          <p class="text-gray-600">
+            In a completely neutral space, examine whatever you want. 
+            Your insights, your choices, your direction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-black text-center text-gray-900 mb-12">
+        Service <span class="text-accent-500">Questions</span>
+      </h2>
+      
+      <div class="max-w-4xl mx-auto space-y-4">
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border-l-4 border-primary-500">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <span class="text-primary-500 mr-3">•</span>
+            Do I need to try the free session first?
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Not at all. You can book a full session directly if you prefer. 
+            The free trial is simply available for those who want to experience 
+            the process before committing to a full session.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border-l-4 border-accent-500">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <span class="text-accent-500 mr-3">•</span>
+            What's the difference between the trial and full session?
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            The process is identical—completely neutral space where you explore 
+            your own material. The full session simply provides more time (60 vs 30 minutes) 
+            for deeper exploration.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border-l-4 border-primary-500">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <span class="text-primary-500 mr-3">•</span>
+            How do I pay for sessions?
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Payment is handled through our secure booking system when you 
+            schedule your appointment. We accept all major payment methods.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border-l-4 border-accent-500">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <span class="text-accent-500 mr-3">•</span>
+            Can I book multiple sessions?
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Absolutely. Many people book sessions as needed. There's no requirement 
+            for ongoing commitment—you use the service when it serves you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"></div>
+    
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+        Ready to Be More Free?
+      </h2>
+      <p class="text-xl text-white/90 mb-10 max-w-3xl mx-auto">
+        Choose the option that feels right for you. Both provide the same 
+        completely neutral space to explore your own material.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button 
+           data-cal-link="be-more-free/30min"
+           data-cal-namespace="30min"
+           data-cal-config='{"layout":"month_view"}'
+           class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
+          Try Free Session
+          <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+        </button>
+        <button 
+           data-cal-link="be-more-free/neutral-zone-1hr"
+           data-cal-namespace="neutral-zone-1hr"
+           data-cal-config='{"layout":"month_view"}'
+           class="group bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
+          Book Full Session
+          <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

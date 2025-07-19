@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Disclaimer - Be More Free">
+  <!-- Hero Section -->
+  <section class="relative py-24 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
+    
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+        Important <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Disclaimers</span>
+      </h1>
+      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        Essential information about the Neutral Zone process and our services
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="prose prose-lg max-w-none">
+        <p class="text-lg text-gray-600 mb-8">
+          <strong>Effective Date:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+
+        <!-- Primary Disclaimer -->
+        <div class="mb-12">
+          <div class="bg-gradient-to-br from-red-50 to-orange-50 border-4 border-red-300 rounded-2xl p-8 mb-8">
+            <h2 class="text-4xl font-black mb-6 text-red-900 text-center">
+              🚨 CRITICAL DISCLAIMER 🚨
+            </h2>
+            <div class="text-center text-xl text-red-800 font-bold mb-6">
+              THE NEUTRAL ZONE PROCESS IS NOT THERAPY, COUNSELING, PSYCHOLOGY, 
+              PSYCHIATRY, OR ANY FORM OF MENTAL HEALTH TREATMENT
+            </div>
+            <p class="text-lg text-gray-700 text-center">
+              Be More Free provides the Neutral Zone process—a unique exploration method 
+              where you examine your own material in a neutral space. This is fundamentally 
+              different from therapy, counseling, or medical treatment.
+            </p>
+          </div>
+        </div>
+
+        <!-- What We Are NOT -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">What We Are NOT</h2>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-xl p-6">
+              <h3 class="text-xl font-semibold mb-4 text-red-900">❌ We Are NOT</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Licensed therapists or counselors</li>
+                <li>• Medical or healthcare providers</li>
+                <li>• Psychologists or psychiatrists</li>
+                <li>• Mental health professionals</li>
+                <li>• Crisis intervention services</li>
+                <li>• Emergency services</li>
+                <li>• A substitute for medical care</li>
+                <li>• Bound by HIPAA regulations</li>
+              </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6">
+              <h3 class="text-xl font-semibold mb-4 text-green-900">✓ We ARE</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Facilitators of the Neutral Zone process</li>
+                <li>• Providers of a unique exploration method</li>
+                <li>• Creators of neutral space for self-examination</li>
+                <li>• Supporters of your own discovery process</li>
+                <li>• A completely different approach to personal exploration</li>
+                <li>• Focused on you finding your own answers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medical Disclaimer -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Medical and Mental Health Disclaimer</h2>
+          
+          <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-8 mb-6">
+            <h3 class="text-2xl font-semibold mb-4 text-amber-900">⚠️ NO MEDICAL OR MENTAL HEALTH ADVICE</h3>
+            <p class="text-lg text-gray-700 mb-4">
+              <strong>The Neutral Zone process and Be More Free do not provide:</strong>
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Medical advice, diagnosis, or treatment</li>
+              <li>Mental health diagnosis or treatment</li>
+              <li>Psychological or psychiatric services</li>
+              <li>Crisis intervention or suicide prevention</li>
+              <li>Substance abuse treatment</li>
+              <li>Medication recommendations</li>
+              <li>Emergency mental health services</li>
+            </ul>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">When to Seek Professional Help</h3>
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-2xl p-6 mb-6">
+            <p class="text-lg text-gray-700 mb-4">
+              <strong>You should seek immediate professional medical or mental health care if you experience:</strong>
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Thoughts of suicide or self-harm</li>
+              <li>Thoughts of harming others</li>
+              <li>Severe depression or anxiety</li>
+              <li>Substance abuse issues</li>
+              <li>Psychotic episodes or severe mental health crises</li>
+              <li>Any medical emergency</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-300 rounded-2xl p-6">
+            <h4 class="text-xl font-semibold mb-3 text-red-900">🆘 EMERGENCY CONTACTS</h4>
+            <ul class="text-gray-700 space-y-2">
+              <li><strong>Emergency Services:</strong> 911 (US) or your local emergency number</li>
+              <li><strong>National Suicide Prevention Lifeline:</strong> 988 (US)</li>
+              <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+              <li><strong>Emergency Room:</strong> Go to your nearest hospital emergency room</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- No Guarantees -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">No Guarantees or Promised Outcomes</h2>
+          
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl p-8">
+            <p class="text-lg text-gray-700 mb-6">
+              <strong>We make absolutely no promises, guarantees, or warranties about:</strong>
+            </p>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>Any specific results or outcomes from Neutral Zone sessions</li>
+              <li>Resolution of any particular problem or issue</li>
+              <li>Improvement in any condition, situation, or relationship</li>
+              <li>Insights, breakthroughs, or discoveries during sessions</li>
+              <li>The suitability of our services for your specific needs</li>
+              <li>The effectiveness of the Neutral Zone process for any individual</li>
+            </ul>
+            <p class="text-lg text-gray-700 font-semibold">
+              Results, if any, will vary significantly from person to person and cannot be predicted.
+            </p>
+          </div>
+        </div>
+
+        <!-- Personal Responsibility -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Your Personal Responsibility</h2>
+          
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-2xl p-8">
+            <p class="text-lg text-gray-700 mb-6">
+              <strong>By using our services, you acknowledge and accept full responsibility for:</strong>
+            </p>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>Your own physical and mental health and well-being</li>
+              <li>All decisions you make before, during, and after sessions</li>
+              <li>Any actions you take based on your session experience</li>
+              <li>Seeking appropriate professional help when needed</li>
+              <li>Managing any crisis or emergency situations</li>
+              <li>Understanding that this is not therapy or medical treatment</li>
+              <li>The consequences of your choices and actions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Limitation of Liability -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Limitation of Liability</h2>
+          
+          <div class="bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-300 rounded-2xl p-8">
+            <p class="text-lg text-gray-700 mb-6">
+              <strong>TO THE FULLEST EXTENT PERMITTED BY LAW:</strong>
+            </p>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>Be More Free and its facilitators shall not be liable for any damages, losses, or harm of any kind</li>
+              <li>We disclaim all warranties, express or implied, regarding our services</li>
+              <li>You use our services entirely at your own risk</li>
+              <li>Our liability, if any, is limited to the amount you paid for the specific session in question</li>
+              <li>We are not responsible for any decisions, actions, or consequences resulting from your sessions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Not a Substitute -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Not a Substitute for Professional Care</h2>
+          
+          <div class="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-300 rounded-2xl p-8">
+            <p class="text-xl text-gray-700 mb-6 font-semibold text-center">
+              The Neutral Zone process is NOT a replacement for:
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+              <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                <li>Professional therapy or counseling</li>
+                <li>Medical treatment or care</li>
+                <li>Psychiatric services</li>
+                <li>Psychological evaluation or treatment</li>
+                <li>Substance abuse treatment</li>
+              </ul>
+              <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                <li>Crisis intervention services</li>
+                <li>Emergency mental health services</li>
+                <li>Medication management</li>
+                <li>Licensed professional consultation</li>
+                <li>Legal or financial advice</li>
+              </ul>
+            </div>
+            <p class="text-lg text-gray-700 mt-6 text-center font-medium">
+              If you need any of these services, please seek qualified professionals in those fields.
+            </p>
+          </div>
+        </div>
+
+        <!-- Professional Relationships -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Existing Professional Relationships</h2>
+          
+          <p class="text-lg text-gray-700 mb-6">
+            The Neutral Zone process does not interfere with or replace any existing relationships 
+            you may have with:
+          </p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li>Your physician or medical doctor</li>
+            <li>Your therapist or counselor</li>
+            <li>Your psychiatrist or mental health provider</li>
+            <li>Any other healthcare professionals</li>
+          </ul>
+          <p class="text-lg text-gray-700">
+            Always consult with your healthcare providers before making any changes to your 
+            treatment or care plans.
+          </p>
+        </div>
+
+        <!-- Information Accuracy -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Information Accuracy</h2>
+          
+          <p class="text-lg text-gray-700 mb-6">
+            While we strive to provide accurate information on our website and in our communications, 
+            we make no warranties about the accuracy, completeness, or reliability of any information. 
+            This information is provided for educational purposes only and should not be relied upon 
+            for any decision-making.
+          </p>
+        </div>
+
+        <!-- Jurisdiction -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Jurisdiction and Governing Law</h2>
+          
+          <p class="text-lg text-gray-700 mb-6">
+            These disclaimers and our services are governed by [Your State/Country] law. 
+            By using our services, you agree to the jurisdiction of [Your Local Courts] 
+            for any legal matters that may arise.
+          </p>
+        </div>
+
+        <!-- Contact for Questions -->
+        <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">Questions About These Disclaimers?</h2>
+          <p class="text-lg text-gray-700 mb-4">
+            If you have questions about these disclaimers or need clarification about our services, 
+            please contact us before booking a session:
+          </p>
+          <div class="text-gray-700">
+            <p class="mb-2"><strong>Be More Free</strong></p>
+            <p class="mb-2">Email: [Your Email Address]</p>
+            <p class="mb-2">Website: <a href="https://bemorefree.com" class="text-primary-600 hover:text-primary-700">bemorefree.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-900">
+        Understand the Process Fully?
+      </h2>
+      <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+        If you understand that the Neutral Zone is not therapy and you're interested 
+        in experiencing this unique exploration process, book your free trial session.
+      </p>
+      <button 
+         data-cal-link="be-more-free/30min"
+         data-cal-namespace="30min"
+         data-cal-config='{"layout":"month_view"}'
+         class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center cursor-pointer">
+        Book Your Free Trial
+        <span class="ml-2">→</span>
+      </button>
+    </div>
+  </section>
+</BaseLayout>

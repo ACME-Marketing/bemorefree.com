@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <BaseLayout title="No Prerequisites - Be More Free">
   <!-- Hero Section -->
-  <section class="relative py-24 overflow-hidden">
+  <section class="relative py-22 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
     
     <!-- Decorative elements -->
@@ -382,11 +382,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         Your first 30-minute Neutral Zone session is free. No forms, no commitment, 
         no preparation required. Just start exploring.
       </p>
-      <a href="/booking/free-trial" 
-         class="group bg-white text-primary-700 px-12 py-6 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center">
+      <button 
+         data-cal-link="be-more-free/30min"
+         data-cal-namespace="30min"
+         data-cal-config='{"layout":"month_view"}'
+         class="group bg-white text-primary-700 px-12 py-6 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
         Book Your Free Trial Session
         <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
-      </a>
+      </button>
     </div>
   </section>
 </BaseLayout>

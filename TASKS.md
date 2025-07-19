@@ -83,6 +83,21 @@
 - [✓] Create "What to Expect" pre-booking content
 - [✓] Test booking flow end-to-end
 - [✓] Set up booking confirmation emails via n8n
+- [✓] Integrate Cal.com embed on homepage for free 30-min sessions
+- [✓] Update Cal.com configuration to use 'be-more-free/30min' booking link
+- [✓] Create Services page with both free trial and 1-hour session booking
+- [✓] Integrate 1-hour session Cal.com embed ('be-more-free/neutral-zone-1hr')
+- [✓] Add Services link to main navigation menu
+- [✓] Update footer to include Services page link
+- [✓] Fix header Free Trial button to use Cal.com (not link to page)
+- [✓] Move Cal.com 30min script to global BaseLayout for site-wide access
+- [✓] Remove redundant Cal.com scripts from individual pages
+- [✓] Update ALL page bottom CTAs to use Cal.com integration instead of booking page links
+  - [✓] About page CTA
+  - [✓] Facilitator page CTA
+  - [✓] All 6 principle pages CTAs
+  - [✓] Blog post template CTA
+  - [✓] Blog index fallback CTA
 
 ## Milestone 8: Lead Generation & Ebook
 - [ ] Create contact form component
@@ -97,15 +112,15 @@
 - [ ] Add success message after submission
 
 ## Milestone 9: Legal & Compliance Pages
-- [ ] Write Privacy Policy with confidentiality terms
-- [ ] Create Terms of Service page
-- [ ] Draft medical/therapy disclaimer
-- [ ] Add "Not a Healthcare Service" notices
-- [ ] Include coaching service clarification
+- [✓] Write Privacy Policy with confidentiality terms
+- [✓] Create Terms of Service page
+- [✓] Draft medical/therapy disclaimer
+- [✓] Add "Not a Healthcare Service" notices
+- [✓] Include coaching service clarification
 - [ ] Create cookie policy (if needed)
-- [ ] Add legal pages to footer navigation
+- [✓] Add legal pages to footer navigation
 - [ ] Ensure GDPR compliance for forms
-- [ ] Add required disclaimers to booking flow
+- [✓] Add required disclaimers to booking flow
 - [ ] Have legal review of all compliance content
 
 ## Milestone 10: SEO & Performance Optimization
@@ -233,6 +248,12 @@
 - [✓] Cross-link all principle pages with related principles section
 - [✓] Maintain consistent branding and modern design across all new pages
 - [✓] Ensure principle pages don't appear in main navigation
+- [✓] Create comprehensive legal pages with strong disclaimers:
+  - [✓] Privacy Policy (/privacy)
+  - [✓] Terms of Service (/terms) 
+  - [✓] Disclaimer (/disclaimer)
+- [✓] All legal pages emphasize "not therapy" positioning and include Cal.com CTAs
+- [✓] Update ALL page bottom CTAs to use Cal.com integration
 
 ## Task Status Key
 - [ ] Not started

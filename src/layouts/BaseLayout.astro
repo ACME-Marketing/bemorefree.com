@@ -60,6 +60,13 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
     
     <title>{title}</title>
     
+    <!-- Cal.com Embed Script for Free Trial (Global) -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", {origin:"https://app.cal.com"});
+      Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
       {JSON.stringify({
@@ -125,14 +132,21 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
               Facilitator
               <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"></span>
             </a>
+            <a href="/services" class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group">
+              Services
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"></span>
+            </a>
             <a href="/blog" class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group">
               Blog
               <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"></span>
             </a>
-            <a href="/booking/free-trial" 
-               class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+            <button 
+               data-cal-link="be-more-free/30min"
+               data-cal-namespace="30min"
+               data-cal-config='{"layout":"month_view"}'
+               class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Free Trial
-            </a>
+            </button>
           </div>
           
           <!-- Mobile menu button -->
@@ -155,13 +169,19 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
             <a href="/facilitator" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
               Facilitator
             </a>
+            <a href="/services" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
+              Services
+            </a>
             <a href="/blog" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
               Blog
             </a>
-            <a href="/booking/free-trial" 
-               class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold text-center mx-4">
+            <button 
+               data-cal-link="be-more-free/30min"
+               data-cal-namespace="30min"
+               data-cal-config='{"layout":"month_view"}'
+               class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold text-center mx-4 cursor-pointer">
               Free Trial
-            </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -219,13 +239,13 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
           <div>
             <h3 class="text-white font-semibold mb-4 text-lg">Sessions</h3>
             <ul class="space-y-3 text-sm">
+              <li><a href="/services" class="hover:text-white transition-colors flex items-center group">
+                <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
+                All Services
+              </a></li>
               <li><a href="/booking/free-trial" class="hover:text-white transition-colors flex items-center group">
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
                 Free 30-Minute Trial
-              </a></li>
-              <li><a href="/booking/session" class="hover:text-white transition-colors flex items-center group">
-                <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>
-                Book Full Session
               </a></li>
               <li><a href="/neutral-zone#what-to-expect" class="hover:text-white transition-colors flex items-center group">
                 <span class="mr-2 text-accent-400 group-hover:translate-x-1 transition-transform">→</span>

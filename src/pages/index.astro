@@ -61,13 +61,6 @@ const differentiators = [
 ---
 
 <BaseLayout title="Be More Free - Finally Stop Being Stuck">
-  <!-- Cal.com Embed Script -->
-  <script type="text/javascript">
-    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-    Cal("init", "neutral-zone-free-session", {origin:"https://app.cal.com"});
-    
-    Cal.ns["neutral-zone-free-session"]("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#af18d3"},"dark":{"cal-brand":"#7513c0"}},"hideEventTypeDetails":false,"layout":"month_view"});
-  </script>
   <!-- Hero Section with Dynamic Gradient -->
   <section class="relative min-h-[45vh] flex items-center justify-center overflow-hidden">
     <!-- Animated gradient background -->
@@ -82,7 +75,7 @@ const differentiators = [
     <div class="container mx-auto px-4 text-center relative z-10 py-20">
       <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
         Tried <span class="text-accent-300">EVERYTHING?</span><br />
-        Look For Yourself And <span class="text-accent-300">Change Your Life</span>
+        Look For Yourself<br /> Maybe <span class="text-accent-300">Change Your Life</span>
       </h1>
       <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
         Years of therapies with nothing much to show for it? The Neutral Zone process 
@@ -90,9 +83,9 @@ const differentiators = [
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <button 
-           data-cal-link="disendarkenment/neutral-zone-free-session"
-           data-cal-namespace="neutral-zone-free-session"
-           data-cal-config='{"layout":"month_view","theme":"dark"}'
+           data-cal-link="be-more-free/30min"
+           data-cal-namespace="30min"
+           data-cal-config='{"layout":"month_view"}'
            class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
           Book Your Free 30-Minute Session
           <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -320,9 +313,9 @@ const differentiators = [
         when you have actual space to look at what's keeping you stuck.
       </p>
       <button 
-         data-cal-link="disendarkenment/neutral-zone-free-session"
-         data-cal-namespace="neutral-zone-free-session"
-         data-cal-config='{"layout":"month_view","theme":"dark"}'
+         data-cal-link="be-more-free/30min"
+         data-cal-namespace="30min"
+         data-cal-config='{"layout":"month_view"}'
          class="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
         Book Your Free Session Now
         <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>

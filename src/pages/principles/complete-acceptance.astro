@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingButton from '../../components/BookingButton.astro';
 ---
 
 <BaseLayout title="Complete Acceptance - Be More Free">
@@ -351,14 +352,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         Your first 30-minute Neutral Zone session is free. Discover what it feels like 
         to examine all parts of yourself without judgment.
       </p>
-      <button 
-         data-cal-link="be-more-free/30min"
-         data-cal-namespace="30min"
-         data-cal-config='{"layout":"month_view"}'
-         class="group bg-white text-primary-700 px-12 py-6 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
-        Book Your Free Trial Session
-        <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
-      </button>
+      <BookingButton 
+        type="free"
+        text="Book Your Free Trial Session"
+        className="group bg-white text-primary-700 px-12 py-6 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center" />
     </div>
   </section>
 </BaseLayout>

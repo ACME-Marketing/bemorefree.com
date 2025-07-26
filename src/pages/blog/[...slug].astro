@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingButton from '../../components/BookingButton.astro';
 import { graphQLClient, gql } from '../../lib/graphql';
 import { normalizeSlug, formatDate, calculateReadingTime } from '../../lib/utils.js';
 
@@ -176,15 +177,10 @@ const sidebarPosts = allPosts.filter(p => p.uri !== uri).slice(0, 5);
             See what it's like to explore your own material in a completely neutral, 
             judgment-free space. Book a free 30-minute trial session.
           </p>
-          <button 
-            data-cal-link="be-more-free/30min"
-            data-cal-namespace="30min"
-            data-cal-config='{"layout":"month_view"}'
-            class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center cursor-pointer"
-          >
-            Book Your Free Trial
-            <span class="ml-2">→</span>
-          </button>
+          <BookingButton 
+            type="free"
+            text="Book Your Free Trial"
+            className="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center" />
         </div>
 
         <!-- Previous/Next Navigation -->

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import BookingButton from '../components/BookingButton.astro';
 
 interface Props {
   title: string;
@@ -63,8 +64,10 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
     <!-- Cal.com Embed Script for Free Trial (Global) -->
     <script type="text/javascript">
       (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init", "30min", {origin:"https://app.cal.com"});
-      Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+      Cal("init", "neutral-zone-free-session", {origin:"https://app.cal.com"});
+      Cal.ns["neutral-zone-free-session"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+      Cal("init", "neutral-zone-one-hour-session", {origin:"https://app.cal.com"});
+      Cal.ns["neutral-zone-one-hour-session"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
     </script>
     
     <!-- Structured Data -->
@@ -140,13 +143,10 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
               Blog
               <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"></span>
             </a>
-            <button 
-               data-cal-link="be-more-free/30min"
-               data-cal-namespace="30min"
-               data-cal-config='{"layout":"month_view"}'
-               class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
-              Free Trial
-            </button>
+            <BookingButton 
+              type="free"
+              text="Free Trial"
+              className="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center" />
           </div>
           
           <!-- Mobile menu button -->
@@ -175,13 +175,10 @@ const imageURL = new URL(image, Astro.site || 'https://bemorefree.com');
             <a href="/blog" class="text-gray-700 hover:text-primary-600 font-medium transition-colors px-4 py-2">
               Blog
             </a>
-            <button 
-               data-cal-link="be-more-free/30min"
-               data-cal-namespace="30min"
-               data-cal-config='{"layout":"month_view"}'
-               class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold text-center mx-4 cursor-pointer">
-              Free Trial
-            </button>
+            <BookingButton 
+              type="free"
+              text="Free Trial"
+              className="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-6 py-3 rounded-full font-semibold text-center mx-4 inline-flex items-center justify-center" />
           </div>
         </div>
       </nav>

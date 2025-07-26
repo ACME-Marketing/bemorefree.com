@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingButton from '../../components/BookingButton.astro';
 ---
 
 <BaseLayout title="Services - Be More Free">
@@ -75,7 +76,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               </li>
               <li class="flex items-start">
                 <span class="text-green-500 mr-3 text-lg">✓</span>
-                <span class="text-gray-700">Phone, Google Meet, or Zoom</span>
+                <span class="text-gray-700">Phone, Google Meet, or What's App</span>
               </li>
               <li class="flex items-start">
                 <span class="text-green-500 mr-3 text-lg">✓</span>
@@ -84,13 +85,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             </ul>
           </div>
 
-          <button 
-             data-cal-link="be-more-free/30min"
-             data-cal-namespace="30min"
-             data-cal-config='{"layout":"month_view"}'
-             class="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
-            Book Your Free Trial
-          </button>
+          <BookingButton 
+            type="free"
+            text="Book Your Free Trial"
+            className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300" />
         </div>
 
         <!-- Full Session -->
@@ -112,7 +110,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="text-4xl font-black text-primary-600 mb-2">
               $150
             </div>
-            <p class="text-gray-600">60-minute session (3 hour blocks, minutes deducted as used)</p>
+            <p class="text-gray-600">60-minute session (5 hour blocks, minutes deducted as used)</p>
           </div>
 
           <div class="mb-8">
@@ -141,13 +139,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             </ul>
           </div>
 
-          <button 
-             data-cal-link="be-more-free/neutral-zone-1hr"
-             data-cal-namespace="neutral-zone-1hr"
-             data-cal-config='{"layout":"month_view"}'
-             class="w-full bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
-            Book Your Session
-          </button>
+          <BookingButton 
+            type="paid"
+            text="Book Your Session"
+            className="w-full bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300" />
         </div>
       </div>
     </div>
@@ -273,22 +268,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         completely neutral space to explore your own material.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button 
-           data-cal-link="be-more-free/30min"
-           data-cal-namespace="30min"
-           data-cal-config='{"layout":"month_view"}'
-           class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
-          Try Free Session
-          <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-        </button>
-        <button 
-           data-cal-link="be-more-free/neutral-zone-1hr"
-           data-cal-namespace="neutral-zone-1hr"
-           data-cal-config='{"layout":"month_view"}'
-           class="group bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
-          Book Full Session
-          <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-        </button>
+        <BookingButton 
+          type="free"
+          text="Try Free Session"
+          className="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl" />
+        <BookingButton 
+          type="paid"
+          text="Book Full Session"
+          className="group bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300" />
       </div>
     </div>
   </section>

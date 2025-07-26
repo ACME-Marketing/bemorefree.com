@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import BookingButton from '../components/BookingButton.astro';
 
 // For now, we'll use placeholder content until blog integration is ready
 const testimonials = [
@@ -82,14 +83,9 @@ const differentiators = [
         helps you find real answers in hours, not years—without someone else's agenda.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button 
-           data-cal-link="be-more-free/30min"
-           data-cal-namespace="30min"
-           data-cal-config='{"layout":"month_view"}'
-           class="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
-          Book Your Free 30-Minute Session
-          <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-        </button>
+        <BookingButton 
+          type="free"
+          className="group bg-white text-primary-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center" />
         <a href="/neutral-zone" 
            class="bg-transparent text-white px-8 py-4 rounded-full text-lg font-bold border-2 border-white/50 hover:bg-white/10 hover:border-white transition-all duration-300">
           How It Works
@@ -312,14 +308,10 @@ const differentiators = [
         Your first 30-minute Neutral Zone session is free. Find out what happens 
         when you have actual space to look at what's keeping you stuck.
       </p>
-      <button 
-         data-cal-link="be-more-free/30min"
-         data-cal-namespace="30min"
-         data-cal-config='{"layout":"month_view"}'
-         class="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center cursor-pointer">
-        Book Your Free Session Now
-        <span class="ml-3 group-hover:translate-x-2 transition-transform">→</span>
-      </button>
+      <BookingButton 
+        type="free"
+        text="Book Your Free Session Now"
+        className="group bg-white text-primary-700 px-10 py-5 rounded-full text-xl font-bold hover:bg-accent-400 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center" />
     </div>
   </section>
 

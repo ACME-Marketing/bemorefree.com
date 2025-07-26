@@ -1,0 +1,31 @@
+---
+import { BOOKING_CONFIG } from '../config/booking';
+
+export interface Props {
+  type: 'free' | 'paid';
+  text?: string;
+  className?: string;
+  showArrow?: boolean;
+}
+
+const { type, text, className = '', showArrow = true } = Astro.props;
+
+const eventConfig = type === 'free' 
+  ? BOOKING_CONFIG.cal.events.freeSession 
+  : BOOKING_CONFIG.cal.events.paidSession;
+
+const defaultText = type === 'free' 
+  ? 'Book Your Free 30-Minute Session' 
+  : 'Book a Full Session';
+
+const buttonText = text || defaultText;
+---
+
+<button 
+  data-cal-link={`${BOOKING_CONFIG.cal.username}/${eventConfig.slug}`}
+  data-cal-namespace={eventConfig.namespace}
+  data-cal-config={JSON.stringify(eventConfig.config)}
+  class={`cursor-pointer ${className}`}>
+  {buttonText}
+  {showArrow && <span class="ml-2">→</span>}
+</button>

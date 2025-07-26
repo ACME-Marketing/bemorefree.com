@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingButton from '../../components/BookingButton.astro';
 ---
 
 <BaseLayout title="About Be More Free - Alternative to Traditional Therapy">
@@ -154,14 +155,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
         Experience the difference for yourself with a free 30-minute trial session.
       </p>
-      <button 
-         data-cal-link="be-more-free/30min"
-         data-cal-namespace="30min"
-         data-cal-config='{"layout":"month_view"}'
-         class="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-10 py-5 rounded-full text-xl font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center cursor-pointer">
-        Book Your Free Trial
-        <span class="ml-3">→</span>
-      </button>
+      <BookingButton 
+        type="free"
+        text="Book Your Free Trial"
+        className="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-10 py-5 rounded-full text-xl font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center" />
     </div>
   </section>
 </BaseLayout>

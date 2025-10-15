@@ -27,4 +27,4 @@ git commit -m "$commit_message"
 echo -e "\nPushing to origin main..."
 git push origin main
 
-echo -e "\nDone! Check Netlify for the deployed site."
+echo -e "\nDone! Check Render for the deployed site."

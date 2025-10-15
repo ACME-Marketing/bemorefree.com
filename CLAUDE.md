@@ -28,7 +28,7 @@ Neutral Zone is NOT therapy. It's a completely non-directive, non-evaluative, an
 - **Framework:** Astro (static site generator)
 - **Styling:** Tailwind CSS only
 - **CMS:** Headless WordPress via GraphQL (already configured)
-- **Hosting:** Netlify
+- **Hosting:** Render.com (static site hosting)
 - **Automation:** n8n at https://n8n.srv874889.hstgr.cloud
 - **Booking:** Direct Cal.com integration
 - **No Database:** This is a static site
@@ -152,7 +152,7 @@ Every page should reinforce:
 - Include session type in booking flow
 
 ### n8n Webhooks:
-- WordPress post publish → Netlify rebuild
+- WordPress post publish → Render deploy
 - Contact form → Email ebook
 - Booking confirmation → TBD
 

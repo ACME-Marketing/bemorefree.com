@@ -8,7 +8,7 @@ Build a high-performance, SEO-optimized static website that converts visitors se
 ```
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────┐
 │                 │     │              │     │             │
-│  Headless WP    │────▶│     n8n      │────▶│   Netlify   │
+│  Headless WP    │────▶│     n8n      │────▶│   Render    │
 │  (Blog CMS)     │     │ (Automation) │     │  (Hosting)  │
 │                 │     │              │     │             │
 └─────────────────┘     └──────────────┘     └─────────────┘
@@ -25,7 +25,7 @@ Build a high-performance, SEO-optimized static website that converts visitors se
 
 ### Data Flow
 1. **Content Creation**: WordPress → GraphQL API → Astro at build time
-2. **Content Updates**: WordPress webhook → n8n → Netlify rebuild trigger
+2. **Content Updates**: WordPress webhook → n8n → Render deploy trigger
 3. **Booking Flow**: Website → Direct Cal.com embed → email confirmations
 4. **Lead Generation**: Contact form → n8n → email ebook → CRM (future)
 
@@ -84,11 +84,11 @@ Build a high-performance, SEO-optimized static website that converts visitors se
   - Types: 30-min free, 60-min paid
 
 ### Hosting & Deployment
-- **Netlify** - Static hosting with CI/CD
+- **Render** - Static site hosting with Git-based builds
   - Build command: `npm run build`
   - Publish directory: `dist/`
-  - Environment variables: API keys, webhook URLs
-  - Features: Form handling, redirects, headers
+  - Deploys: Triggered automatically on updates to the default branch
+  - Notes: No backend processes required; static assets served via CDN
 
 - **GitHub** - Version control
   - Branch strategy: main (production), develop (staging)
@@ -146,11 +146,11 @@ PUBLIC_SITE_URL=https://bemorefree.com
 WORDPRESS_GRAPHQL_ENDPOINT=https://wp.example.com/graphql
 N8N_WEBHOOK_URL=https://n8n.srv874889.hstgr.cloud/webhook/xxx
 CAL_COM_NAMESPACE=neutralzone
-NETLIFY_WEBHOOK_URL=https://api.netlify.com/build_hooks/xxx
+RENDER_DEPLOY_HOOK_URL=https://api.render.com/deploy/srv-xxx?key=yyy  # optional manual redeploy trigger
 ```
 
 ### External Accounts Needed
-1. **Netlify** - Hosting account with build hooks enabled
+1. **Render** - Static hosting account connected to GitHub
 2. **Cal.com** - Account with API access
 3. **Google** - Analytics, Search Console, Business Profile
 4. **WordPress** - Existing, with GraphQL plugin
@@ -195,7 +195,7 @@ npm run preview
 ## Security Considerations
 - **No Client Secrets**: All API calls at build time
 - **Form Validation**: Client and n8n-side
-- **Headers**: Security headers via Netlify
+- **Headers**: Configure security headers via Render static hosting or upstream CDN
 - **HTTPS**: Enforced everywhere
 - **Data**: No PII stored in Git
 
@@ -214,13 +214,13 @@ npm run preview
 ## Monitoring & Analytics
 - **Google Analytics 4**: User behavior tracking
 - **Google Search Console**: SEO monitoring
-- **Netlify Analytics**: Performance metrics
+- **Render Metrics**: Deployment and traffic insights
 - **n8n Logs**: Workflow monitoring
 - **Error Tracking**: Browser console only (MVP)
 
 ## Future Considerations
 - **CDN**: Cloudflare for global performance
-- **A/B Testing**: Netlify split testing
+- **A/B Testing**: Evaluate Render-compatible split testing solutions
 - **CRM Integration**: HubSpot or similar
 - **Email Platform**: For nurture sequences
 - **Multilingual**: i18n preparation in URLs

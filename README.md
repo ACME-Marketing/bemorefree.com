@@ -22,7 +22,7 @@ This website serves as the primary digital presence for Be More Free, focusing o
 - **Framework:** Astro 4.x (Static Site Generator)
 - **Styling:** Tailwind CSS
 - **CMS:** Headless WordPress (via GraphQL)
-- **Hosting:** Netlify
+- **Hosting:** Render.com (static site hosting)
 - **Automation:** n8n (https://n8n.srv874889.hstgr.cloud)
 - **Booking:** Direct Cal.com integration
 
@@ -63,7 +63,7 @@ Required environment variables (see `.env.example`):
 - `WORDPRESS_GRAPHQL_ENDPOINT` - WordPress GraphQL API endpoint
 - `N8N_WEBHOOK_URL` - n8n automation webhook
 - `CAL_COM_NAMESPACE` - Cal.com booking namespace
-- `NETLIFY_WEBHOOK_URL` - Netlify build hook
+- `RENDER_DEPLOY_HOOK_URL` - Optional: use if automations need to trigger a Render deploy
 
 ## 📁 Project Structure
 
@@ -84,7 +84,7 @@ Required environment variables (see `.env.example`):
 
 ## 🚢 Deployment
 
-The site automatically deploys to Netlify on push to the `main` branch. 
+The site is hosted on Render.com as a static site. Every push to `main` triggers a fresh `npm run build` and deploy—no backend services are required.
 
 - **Production:** https://bemorefree.com (main branch)
 - **Staging:** TBD (develop branch)

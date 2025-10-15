@@ -14,4 +14,4 @@ IDE: VS Code
 Framework: Astro
 CSS: Tailwind CSS
 CMS: WordPress (Headless)
-Hosting: Netlify
+Hosting: Render

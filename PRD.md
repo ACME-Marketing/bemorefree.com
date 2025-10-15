@@ -219,14 +219,14 @@ Sample testimonials to include:
 - **CMS:** Headless WordPress (existing setup)
 - **API:** GraphQL interface to WordPress
 - **Automation:** n8n (existing at https://n8n.srv874889.hstgr.cloud)
-- **Hosting:** Netlify
+- **Hosting:** Render.com (static site hosting)
 - **Version Control:** GitHub
 - **Booking:** Cal.com integration
 
 ### WordPress Integration
 - Used solely for blog post creation
 - Webhook triggers n8n on new post
-- n8n triggers Netlify rebuild
+- n8n triggers Render deploy (via deploy hook)
 - GraphQL API already configured (reference: Disendarkenment.com)
 
 ### SEO Requirements

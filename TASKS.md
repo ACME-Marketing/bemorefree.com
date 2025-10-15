@@ -6,8 +6,8 @@
 - [✓] Configure Tailwind CSS with custom brand colors
 - [✓] Set up Prettier with Astro and Tailwind plugins
 - [✓] Create .env.example with all required variables
-- [✓] Configure Netlify deployment from GitHub
-- [✓] Set up staging environment on Netlify
+- [✓] Configure Render static site deployment from GitHub
+- [✓] Set up staging environment on Render
 - [✓] Create basic folder structure per PLANNING.md
 - [✓] Add favicons and meta images
 - [✓] Configure Astro config for sitemap and image optimization
@@ -70,7 +70,7 @@
 - [ ] Add compelling meta descriptions
 - [ ] Include relevant internal links
 - [ ] Create custom OG images for each post
-- [ ] Test WordPress to Netlify rebuild workflow
+- [ ] Test WordPress to Render deploy workflow
 
 ## Milestone 7: Booking System Integration
 - [✓] Research Cal.com embed vs redirect options
@@ -140,7 +140,7 @@
 - [ ] Configure conversion tracking for bookings
 - [ ] Set up Google Search Console
 - [ ] Add Microsoft Clarity (optional)
-- [ ] Create Netlify form notifications
+- [ ] Create form notification automation (n8n or email)
 - [ ] Set up n8n error notifications
 - [ ] Configure uptime monitoring
 - [ ] Create dashboard for key metrics
@@ -173,7 +173,7 @@
 
 ## Milestone 14: Launch Day
 - [✓] Deploy to production environment
-- [✓] Update DNS to point to Netlify
+- [✓] Update DNS to point to Render
 - [✓] Verify SSL certificate is active
 - [✓] Test all critical user paths
 - [ ] Submit sitemap to Google
